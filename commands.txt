@@ -1,0 +1,32 @@
+cd cd E:\repos_git\mega
+e:
+
+#ite 1
+python megalearner words_in_dict --output "c:\
+
+#ite 2
+python megalearner words_in_dict --output "E:\repos_git\mega\tests\file.txt"
+
+#ite3
+python megalearner words_in_dict --input "E:\repos_git\mega\tests\file.txt" --output "E:\repos_git\mega\tests\"
+
+#ite4
+
+chcp 65001
+set PYTHONIOENCODING=utf-8
+python megalearner words_in_dict --input "E:\repos_git\mega\tests\file.txt" --output E:\repos_git\mega\tests\
+
+#ite5 - classify phonetic
+python megalearner classify_phonetic --input "E:\repos_git\mega\tests\master.csv"
+
+#ite6
+E:\repos_git\mega>python megalearner words_in_dict --input "E:\repos_git\mega\tests\Uk_English_top_1000_words.txt" --output E:\repos_
+git\mega\tests\Uk_English_top_1000_words
+
+#commands git
+git init
+git remote add origin https://github.com/jasam/megalearner.git
+cd ....
+git clone https://github.com/jasam/megalearner
+git config --global user.name "Javier Rey"
+git config --global user.email jreyro@gmail.com
