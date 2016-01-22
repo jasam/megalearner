@@ -1,4 +1,2 @@
-word,mean,phonetic
-colour,,
-towards,,
-behaviour,,
+word,mean,phonetic,path_mp3,image_path
+colour,,,,

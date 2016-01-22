@@ -30,3 +30,11 @@ cd ....
 git clone https://github.com/jasam/megalearner
 git config --global user.name "Javier Rey"
 git config --global user.email jreyro@gmail.com
+git add *
+git commit -m "Load project first time"
+git push
+
+#ite 7
+E:\repos_git>python megalearner words_in_dict --input "E:\repos_git\megalearner\tests\Uk_English_top_1000_words.txt" --output E:\repo
+s_git\megalearner\tests\Uk_English_top_1000_words
+

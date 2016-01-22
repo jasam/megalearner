@@ -3,16 +3,20 @@
 import nltk
 import re
 from urllib.request import urlopen
+from urllib.request import urlretrieve
 import codecs
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
 class WordSpec:
  	
- 	def __init__(self, word, phonetic, mean):
+ 	def __init__(self, word, phonetic, mean, path_mp3, image_path):
  		self.word = word
  		self.phonetic = phonetic
  		self.mean = mean
+ 		self.path_mp3 = path_mp3
+ 		self.image_path = image_path
 
  	def get_word(self):
  		return self.word
@@ -22,6 +26,12 @@ class WordSpec:
 
  	def get_mean(self):
  		return self.mean
+
+ 	def get_path_mp3(self):
+ 		return self.path_mp3
+
+ 	def get_image_path(self):
+ 		return self.image_path
 
 #clean and tokenize source file
 def clean_words(args):
@@ -41,10 +51,10 @@ def clean_words(args):
 		file_handle.close()
 
 def create_file(name_file, data):
-	words_df = pd.DataFrame(columns=["word", "mean", "phonetic"])
+	words_df = pd.DataFrame(columns=["word", "mean", "phonetic", "path_mp3", "image_path"])
 	for item in data:
 		#print(item)
-		words_df.loc[len(words_df)+1]=[item.get_word(), item.get_mean(), item.get_phonetic()] 
+		words_df.loc[len(words_df)+1]=[item.get_word(), item.get_mean(), item.get_phonetic(), item.get_path_mp3(), item.get_image_path()] 
 	#print(words_df)
 
 	#create file
@@ -72,7 +82,7 @@ def get_translation(soup):
 	mean = ""
 	#print(tags)
 	if len(tags) != 0: 
-		for link in tags[0].find_all("a"): 
+		for link in tags[0].find_all("div"): 
 			mean = link.get_text()
 			#print(phonetic)
 			#break
@@ -80,7 +90,19 @@ def get_translation(soup):
 		return mean	
 	else:
 		return mean
-	
+
+#get sound of word
+def get_sound(soup, path_to_save):
+	#print(path_to_save)
+	mp3_tags = soup.find_all("span", class_="prx")
+	if len(mp3_tags) != 0: 
+		for link in mp3_tags[0].find_all("div"):
+			 file_name_mp3 = link.get('data-src-mp3')
+			#print(phonetic)
+			#break
+		#print(file_name_mp3)	
+		urlretrieve(file_name_mp3, path_to_save + ".mp3")
+
 #scraping dictionary to obtain phonetic, translation and sound
 #using oxford dictionary
 def scrape_dict(tokens, args):
@@ -90,6 +112,11 @@ def scrape_dict(tokens, args):
 	words = []
 	words_not_found = []
 	
+	#create dir for sounds
+	sounds_path = args[1] + "\sounds"
+	if not os.path.exists(sounds_path):
+		os.makedirs(sounds_path)
+
 	for word in tokens:
 		print(word)
 		try:
@@ -98,7 +125,7 @@ def scrape_dict(tokens, args):
 		except Exception as e:
 			print("***word: " + word + " doesn't exist***")
 			print(e)
-			word_spec = WordSpec(word, "", "")
+			word_spec = WordSpec(word, "", "", "", "")
 			words_not_found.append(word_spec)
 			continue
 		
@@ -112,9 +139,13 @@ def scrape_dict(tokens, args):
 		#print(phonetic)
 		mean = get_translation(soup)
 		#print(mean)
-		word_spec = WordSpec(word, phonetic, mean)
-		words.append(word_spec)
 		#print(word_spec)
+		#get sound
+		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
+		get_sound(soup, path_name_mp3)
+		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
+		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
+		words.append(word_spec)
 		
 	
 	#write words in master file

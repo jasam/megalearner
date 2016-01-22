@@ -59,12 +59,35 @@ def cluster_word(args):
         	#print(rule_name  + str(word), phonetic)
 			words_rules_df.loc[len(words_rules_df)+1]=[word, rule_name, phonetic]
 
-	#words_rules_df        
+		rule = "ʊ"
+		rule_name = "other u : /ʊ/"
+		if re.search(rule,str(phonetic)) and not re.search("oʊ",str(phonetic)):
+			#print(rule_name  + str(word), phonetic)
+			words_rules_df.loc[len(words_rules_df)+1]=[word, rule_name, phonetic]    
+		rule = "ɔ"
+		rule_name = "aw sound : /ɔ/"
+		if re.search(rule,str(phonetic)):
+			#print(rule_name  + str(word), phonetic)
+			words_rules_df.loc[len(words_rules_df)+1]=[word, rule_name, phonetic]
+		rule = "ɑr"
+		rule_name = "ar sound : /ɑr/"
+		if re.search(rule,str(phonetic)):
+			#print(rule_name  + str(word), phonetic)
+			words_rules_df.loc[len(words_rules_df)+1]=[word, rule_name, phonetic]
+		rule = "ɔr"
+		rule_name = "or sound : /ɔr/"
+		if re.search(rule,str(phonetic)):
+      		#print(rule_name  + str(word), phonetic)
+			words_rules_df.loc[len(words_rules_df)+1]=[word, rule_name, phonetic]
+
+	 #words_rules_df        
 	#words_rules_df.groupby(['word']).size()
 	#grouped = words_rules_df.groupby(['word'])
 	#grouped.filter(lambda x: len(x) > 1)
-	print(words_rules_df[words_rules_df["rule"] == "short  o : /ɑ/"])
-
+	words_rules_df[words_rules_df["rule"] == "short  i : /ɪ/"]
+	#grouped = words_rules_df.groupby(['rule'])
+	#grouped.size()
+	#grouped.filter(lambda x: len(x) > 1)
 
 def main(args):
 	print("--classify_phonetic")
