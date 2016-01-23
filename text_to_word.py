@@ -51,10 +51,12 @@ def clean_words(args):
 		file_handle.close()
 
 def create_file(name_file, data):
+	#print("create_file")
 	words_df = pd.DataFrame(columns=["word", "mean", "phonetic", "path_mp3", "image_path"])
 	for item in data:
 		#print(item)
-		words_df.loc[len(words_df)+1]=[item.get_word(), item.get_mean(), item.get_phonetic(), item.get_path_mp3(), item.get_image_path()] 
+		#print("loop create file")
+		words_df.loc[len(words_df) + 1]=[item.get_word(), item.get_mean(), item.get_phonetic(), item.get_path_mp3(), item.get_image_path()] 
 	#print(words_df)
 
 	#create file
@@ -82,12 +84,12 @@ def get_translation(soup):
 	mean = ""
 	#print(tags)
 	if len(tags) != 0: 
-		for link in tags[0].find_all("div"): 
+		#print(tags)
+		for link in tags[0].find_all("a"): 
 			mean = link.get_text()
-			#print(phonetic)
-			#break
+			print(mean)
+			return mean	
 		#print(mean)
-		return mean	
 	else:
 		return mean
 
@@ -97,8 +99,8 @@ def get_sound(soup, path_to_save):
 	mp3_tags = soup.find_all("span", class_="prx")
 	if len(mp3_tags) != 0: 
 		for link in mp3_tags[0].find_all("div"):
-			 file_name_mp3 = link.get('data-src-mp3')
-			#print(phonetic)
+			file_name_mp3 = link.get('data-src-mp3')
+			#print(file_name_mp3)
 			#break
 		#print(file_name_mp3)	
 		urlretrieve(file_name_mp3, path_to_save + ".mp3")
@@ -141,7 +143,7 @@ def scrape_dict(tokens, args):
 		#print(mean)
 		#print(word_spec)
 		#get sound
-		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
+		path_name_mp3 = "{0}\{1}".format(sounds_path, word)
 		get_sound(soup, path_name_mp3)
 		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
 		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
