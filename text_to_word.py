@@ -103,7 +103,7 @@ def get_sound(soup, path_to_save):
 			#print(file_name_mp3)
 			#break
 		#print(file_name_mp3)	
-		urlretrieve(file_name_mp3, path_to_save + ".mp3")
+		urlretrieve(file_name_mp3, path_to_save)
 
 #scraping dictionary to obtain phonetic, translation and sound
 #using oxford dictionary
@@ -143,14 +143,14 @@ def scrape_dict(tokens, args):
 		#print(mean)
 		#print(word_spec)
 		#get sound
-		path_name_mp3 = "{0}\{1}".format(sounds_path, word)
-		get_sound(soup, path_name_mp3)
+		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
+		#get_sound(soup, path_name_mp3)
 		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
 		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
 		words.append(word_spec)
 		
 	
-	#write words in master file
+	#write words into master file
 	file_name = "{0}\{1}".format(args[1], "master.csv")
 	create_file(file_name, words)
 	#write words in doesn't exist
