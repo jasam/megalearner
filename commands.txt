@@ -1,27 +1,14 @@
-cd cd E:\repos_git\mega
+cd E:\repos_git\
 e:
 
-#ite 1
-python megalearner words_in_dict --output "c:\
-
-#ite 2
-python megalearner words_in_dict --output "E:\repos_git\mega\tests\file.txt"
-
-#ite3
-python megalearner words_in_dict --input "E:\repos_git\mega\tests\file.txt" --output "E:\repos_git\mega\tests\"
-
-#ite4
 
 chcp 65001
 set PYTHONIOENCODING=utf-8
 python megalearner words_in_dict --input "E:\repos_git\mega\tests\file.txt" --output E:\repos_git\mega\tests\
 
 #ite5 - classify phonetic
-python megalearner classify_phonetic --input "E:\repos_git\mega\tests\master.csv"
-
-#ite6
-E:\repos_git\mega>python megalearner words_in_dict --input "E:\repos_git\mega\tests\Uk_English_top_1000_words.txt" --output E:\repos_
-git\mega\tests\Uk_English_top_1000_words
+python megalearner classify_phonetic --input "E:\repos_git\megalearner\tests\Uk_English_top_1000_words\master.csv" --out
+put E:\repos_git\megalearner\tests\Uk_English_top_1000_words
 
 #commands git
 git init
@@ -37,4 +24,17 @@ git push
 #ite 7
 E:\repos_git>python megalearner words_in_dict --input "E:\repos_git\megalearner\tests\Uk_English_top_1000_words.txt" --output E:\repo
 s_git\megalearner\tests\Uk_English_top_1000_words
+
+#commands with pandas
+	words_rules_df        
+	words_rules_df.groupby(['word']).size()
+	grouped = words_rules_df.groupby(['word'])
+	grouped.filter(lambda x: len(x) > 1)
+	words_rules_df[words_rules_df["rule"] == "short  i : /ɪ/"]
+	grouped = words_rules_df.groupby(['rule'])
+	grouped.size()
+	grouped.filter(lambda x: len(x) > 1)
+
+http://chrisalbon.com/python/pandas_index_select_and_filter.html
+http://pandas.pydata.org/pandas-docs/stable/indexing.html#the-select-method
 

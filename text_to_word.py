@@ -144,7 +144,7 @@ def scrape_dict(tokens, args):
 		#print(word_spec)
 		#get sound
 		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
-		#get_sound(soup, path_name_mp3)
+		get_sound(soup, path_name_mp3)
 		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
 		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
 		words.append(word_spec)
@@ -154,7 +154,7 @@ def scrape_dict(tokens, args):
 	file_name = "{0}\{1}".format(args[1], "master.csv")
 	create_file(file_name, words)
 	#write words in doesn't exist
-	file_name ="{0}\{1}".format(args[1], "words_not_found.csv")
+	file_name = "{0}\{1}".format(args[1], "words_not_found.csv")
 	create_file(file_name, words_not_found)
 	print("Total words: " + str(len(tokens)))
 	print("Total words not found: " + str(len(words_not_found)))

@@ -21,7 +21,7 @@ def main():
 	elif action == "classify_phonetic":
 		print("Reading source in: %s"%(input_arg))
 		print("Output directory: %s"%(output_arg))
-		classify_phonetic.main([input_arg])
+		classify_phonetic.main([input_arg, output_arg])
 
 if __name__ == "__main__":
 	main()
