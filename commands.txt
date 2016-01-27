@@ -38,3 +38,14 @@ s_git\megalearner\tests\Uk_English_top_1000_words
 http://chrisalbon.com/python/pandas_index_select_and_filter.html
 http://pandas.pydata.org/pandas-docs/stable/indexing.html#the-select-method
 
+#rpy2
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2
+http://stackoverflow.com/questions/14882477/rpy2-install-on-windows-7
+
+
+patterns
+
+"Ay" sometimes is "EI"
+word finish with : "ation" "a" changes to "EI"
+"ai" sometimes is "EI"
+
