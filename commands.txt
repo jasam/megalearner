@@ -41,11 +41,19 @@ http://pandas.pydata.org/pandas-docs/stable/indexing.html#the-select-method
 #rpy2
 http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2
 http://stackoverflow.com/questions/14882477/rpy2-install-on-windows-7
-
+http://www.nltk.org/_modules/nltk/corpus/reader/cmudict.html
+http://www.nltk.org/nltk_data/
 
 patterns
 
 "Ay" sometimes is "EI"
 word finish with : "ation" "a" changes to "EI"
 "ai" sometimes is "EI"
+"gh sometimes doesn´t sound"
+word terminated in ate sounds like a ei
+example associate -> əˈsoʊsiˌeɪt
+
+
+#NLTK
+http://www.nltk.org/book/ch06.html
 

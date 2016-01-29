@@ -144,7 +144,7 @@ def scrape_dict(tokens, args):
 		#print(word_spec)
 		#get sound
 		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
-		get_sound(soup, path_name_mp3)
+		#get_sound(soup, path_name_mp3)
 		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
 		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
 		words.append(word_spec)
