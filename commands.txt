@@ -53,6 +53,13 @@ word finish with : "ation" "a" changes to "EI"
 word terminated in ate sounds like a ei
 example associate -> əˈsoʊsiˌeɪt
 
+"a" between two consonants sounds "EI" example
+speace
+
+sometimes "gh" doesn´t sound when it is between two consonants
+
+
+
 
 #NLTK
 http://www.nltk.org/book/ch06.html
