@@ -37,7 +37,7 @@ class WordSpec:
 def clean_words(args):
 	#print("--clean_words")
 	file_name = args[0]
-	file_handle = codecs.open(file_name, 'r', 'utf-8')
+	file_handle = codecs.open(file_name, 'r', 'ISO-8859-1')
 	try:
 		stream_file = file_handle.read()
 		tokens = nltk.wordpunct_tokenize(stream_file)
@@ -97,13 +97,15 @@ def get_translation(soup):
 def get_sound(soup, path_to_save):
 	#print(path_to_save)
 	mp3_tags = soup.find_all("span", class_="prx")
+	file_name_mp3 = None
 	if len(mp3_tags) != 0: 
 		for link in mp3_tags[0].find_all("div"):
 			file_name_mp3 = link.get('data-src-mp3')
 			#print(file_name_mp3)
 			#break
-		#print(file_name_mp3)	
-		urlretrieve(file_name_mp3, path_to_save)
+		#print(file_name_mp3)
+		if file_name_mp3 is not None:	
+			urlretrieve(file_name_mp3, path_to_save)
 
 #scraping dictionary to obtain phonetic, translation and sound
 #using oxford dictionary
@@ -144,7 +146,7 @@ def scrape_dict(tokens, args):
 		#print(word_spec)
 		#get sound
 		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
-		#get_sound(soup, path_name_mp3)
+		get_sound(soup, path_name_mp3)
 		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
 		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
 		words.append(word_spec)
