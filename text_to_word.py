@@ -8,6 +8,8 @@ import codecs
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
+import requests
+from nltk.stem import WordNetLemmatizer
 
 class WordSpec:
  	
@@ -87,7 +89,7 @@ def get_translation(soup):
 		#print(tags)
 		for link in tags[0].find_all("a"): 
 			mean = link.get_text()
-			print(mean)
+			#print(mean)
 			return mean	
 		#print(mean)
 	else:
@@ -99,10 +101,13 @@ def get_sound(soup, path_to_save):
 	mp3_tags = soup.find_all("span", class_="prx")
 	file_name_mp3 = None
 	if len(mp3_tags) != 0: 
+		#print("lenght doesn´t zero")
 		for link in mp3_tags[0].find_all("div"):
 			file_name_mp3 = link.get('data-src-mp3')
 			#print(file_name_mp3)
 			#break
+		#print("file_name_mp3: " + str(file_name_mp3))
+		#print("path_to_save: ",path_to_save)
 		#print(file_name_mp3)
 		if file_name_mp3 is not None:	
 			urlretrieve(file_name_mp3, path_to_save)
@@ -121,17 +126,31 @@ def scrape_dict(tokens, args):
 	if not os.path.exists(sounds_path):
 		os.makedirs(sounds_path)
 
+	lmtzr = WordNetLemmatizer()
 	for word in tokens:
-		print(word)
-		try:
-			#print(URL_DICT + word)
-			html = urlopen(URL_DICT + word).read()
-		except Exception as e:
-			print("***word: " + word + " doesn't exist***")
-			print(e)
-			word_spec = WordSpec(word, "", "", "", "")
-			words_not_found.append(word_spec)
-			continue
+		#print(word)
+		token_lemma = word
+		result = requests.get(URL_DICT + token_lemma)
+		if result.status_code == 200:
+			print(word, " --exists!")
+			html = urlopen(URL_DICT + token_lemma).read()
+		else:
+			token_lemma = lmtzr.lemmatize(word)
+			result = requests.get(URL_DICT + token_lemma)
+			if result.status_code == 200:
+				print(word, " --exists!")
+				html = urlopen(URL_DICT + token_lemma).read()
+			else:
+				token_lemma = lmtzr.lemmatize(word, "v")
+				result = requests.get(URL_DICT + token_lemma)
+				if result.status_code == 200:
+					print(word, " --exists!")
+					html = urlopen(URL_DICT + token_lemma).read()
+				else:
+					print("***word: " + word + " doesn't exist***")
+					word_spec = WordSpec(word, "", "", "", "")
+					words_not_found.append(word_spec)
+					continue
 		
 		#get soup
 		soup = BeautifulSoup(html, 'html.parser')
@@ -145,10 +164,10 @@ def scrape_dict(tokens, args):
 		#print(mean)
 		#print(word_spec)
 		#get sound
-		path_name_mp3 = "{0}\{1}.{2}".format(sounds_path, word, "mp3")
+		path_name_mp3 = "{0}\ {1}.{2}".format(sounds_path, token_lemma, "mp3")
 		get_sound(soup, path_name_mp3)
-		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", word, "png")
-		word_spec = WordSpec(word, phonetic, mean, path_name_mp3, image_path_name)
+		image_path_name = "{0}\{1}\{2}.{3}".format(args[1], "images", token_lemma, "png")
+		word_spec = WordSpec(token_lemma, phonetic, mean, path_name_mp3, image_path_name)
 		words.append(word_spec)
 		
 	
