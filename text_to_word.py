@@ -1,4 +1,18 @@
-###Phase 1 project megalearner
+# Phase 1 project megalearner: text to  word, data analysis pipe 1 (preprocessing)
+# Author  : Javier Rey <jreyro@gmail.com>
+# License : MIT
+
+"""
+Text to word is an utility to Is a utility to allow processing of any text, it is a firts step from pipeline to 
+natural language procesing to assist to learn english language, including work: 
+* tokenization, 
+* web scraping (get mp3 sound), 
+* standardization, 
+* stemming, 
+* meaning 
+* regular expressions
+obtaining synthesizing all of the above in a plain text output.
+"""
 
 import nltk
 import re
@@ -37,7 +51,6 @@ class WordSpec:
 
 #clean and tokenize source file
 def clean_words(args):
-	#print("--clean_words")
 	file_name = args[0]
 	file_handle = codecs.open(file_name, 'r', 'ISO-8859-1')
 	try:
@@ -47,68 +60,49 @@ def clean_words(args):
 		tokens = [word.lower() for word in tokens if not(re.search("[^a-zA-Z]", word))] 
 		tokens = set(tokens)
 		print("Quantity of words: " + str(len(tokens)))
-		#print(tokens)
 		return tokens
 	finally:
 		file_handle.close()
 
+#Create file with: word, mean, phonetic, path_mp3 and image_path
 def create_file(name_file, data):
-	#print("create_file")
 	words_df = pd.DataFrame(columns=["word", "mean", "phonetic", "path_mp3", "image_path"])
 	for item in data:
-		#print(item)
-		#print("loop create file")
 		words_df.loc[len(words_df) + 1]=[item.get_word(), item.get_mean(), item.get_phonetic(), item.get_path_mp3(), item.get_image_path()] 
-	#print(words_df)
-
-	#create file
-	#print(name_file)
+	
 	words_df.to_csv(name_file, encoding='utf-8', index=False)
 
+#Get phonetic using web scraping
 def get_phonetic(soup):
-	#print("--get_phonetic")
 	tags = soup.find_all("span", class_="prx")
-	#print(tags)
 	phonetic = ""
 	if len(tags) != 0: 
 		for link in tags[0].find_all("a"):
 			phonetic = link.get_text()
-			#print(phonetic)
 			break
 		return phonetic
 	else:
 		return phonetic
 
+#Get meaning using web scraping
 #note: some words doesn't appear, likely page was developed over other code, scrape will fail.
 def get_translation(soup):
-	#print("--get_translation")
 	tags = soup.find_all("span", class_="tr trnoprecex")
 	mean = ""
-	#print(tags)
 	if len(tags) != 0: 
-		#print(tags)
 		for link in tags[0].find_all("a"): 
 			mean = link.get_text()
-			#print(mean)
 			return mean	
-		#print(mean)
 	else:
 		return mean
 
 #get sound of word
 def get_sound(soup, path_to_save):
-	#print(path_to_save)
 	mp3_tags = soup.find_all("span", class_="prx")
 	file_name_mp3 = None
 	if len(mp3_tags) != 0: 
-		#print("lenght doesn´t zero")
 		for link in mp3_tags[0].find_all("div"):
 			file_name_mp3 = link.get('data-src-mp3')
-			#print(file_name_mp3)
-			#break
-		#print("file_name_mp3: " + str(file_name_mp3))
-		#print("path_to_save: ",path_to_save)
-		#print(file_name_mp3)
 		if file_name_mp3 is not None:	
 			urlretrieve(file_name_mp3, path_to_save)
 
@@ -116,8 +110,6 @@ def get_sound(soup, path_to_save):
 #using oxford dictionary
 def scrape_dict(tokens, args):
 	URL_DICT = "http://www.oxforddictionaries.com/translate/english-spanish/"
-	#print("--scrape_dict")
-	#print(args)
 	words = []
 	words_not_found = []
 	
@@ -138,15 +130,18 @@ def scrape_dict(tokens, args):
 			token_lemma = lmtzr.lemmatize(word)
 			result = requests.get(URL_DICT + token_lemma)
 			if result.status_code == 200:
+				#Using from console, useful for see live log report
 				print(word, " --exists!")
 				html = urlopen(URL_DICT + token_lemma).read()
 			else:
 				token_lemma = lmtzr.lemmatize(word, "v")
 				result = requests.get(URL_DICT + token_lemma)
 				if result.status_code == 200:
+					#Using from console, useful for see live log report
 					print(word, " --exists!")
 					html = urlopen(URL_DICT + token_lemma).read()
 				else:
+					#Using from console, useful for see live log report
 					print("***word: " + word + " doesn't exist***")
 					word_spec = WordSpec(word, "", "", "", "")
 					words_not_found.append(word_spec)
@@ -154,15 +149,10 @@ def scrape_dict(tokens, args):
 		
 		#get soup
 		soup = BeautifulSoup(html, 'html.parser')
-		#print(soup)
-		#tags = soup.find_all("span", class_="prx")
-		#print(dir(soup))
 		#get phonetic
 		phonetic = get_phonetic(soup)
 		#print(phonetic)
 		mean = get_translation(soup)
-		#print(mean)
-		#print(word_spec)
 		#get sound
 		path_name_mp3 = "{0}\ {1}.{2}".format(sounds_path, token_lemma, "mp3")
 		get_sound(soup, path_name_mp3)
@@ -174,15 +164,15 @@ def scrape_dict(tokens, args):
 	#write words into master file
 	file_name = "{0}\{1}".format(args[1], "master.csv")
 	create_file(file_name, words)
-	#write words in doesn't exist
+	#write words doesn't exist
 	file_name = "{0}\{1}".format(args[1], "words_not_found.csv")
 	create_file(file_name, words_not_found)
+	#Using from console, useful for see live log report
 	print("Total words: " + str(len(tokens)))
 	print("Total words not found: " + str(len(words_not_found)))
 	print("Percentage misses: " + str(len(words_not_found) / len(tokens)))
 
 def main(args):
-	print("--text_to_word")
 	#get clean tokens
 	tokens = clean_words(args)
 	#create output with words
