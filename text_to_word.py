@@ -177,3 +177,7 @@ def main(args):
 	tokens = clean_words(args)
 	#create output with words
 	scrape_dict(tokens,args)
+	
+args = ['/home/jasam/repositories/megalearner/gotham/Gotham - 1x01.srt']	
+tokens = clean_words(args)
+
