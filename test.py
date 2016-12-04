@@ -1,5 +1,10 @@
-import classify_phonetic
+args = ['/home/jasam/repositories/megalearner/tests/gotham/Gotham - 1x01.srt', '/home/jasam/repositories/megalearner/tests/gotham/']
 
-args["E:/repos_git/mega/tests/master.csv"]
+import pysrt
+file_name = args[0]
 
-main(args)
+
+subs = pysrt.open(file_name)
+for item in subs:
+    print(item.text.replace('-', ''))
+print('finished')
