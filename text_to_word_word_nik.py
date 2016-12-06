@@ -114,7 +114,7 @@ def get_sound(word, path_to_save):
     urlretrieve(path_name_mp3, path_to_save+'/'+word+'.mp3')
     return path_name_mp3 
 
-# Create file with informationi about words
+# Create file with information about words
 def create_file_resume(tokens, args):
 	words = []
 	words_not_found = []
