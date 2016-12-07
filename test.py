@@ -59,14 +59,15 @@ subs = pysrt.open(file_name)
 index = 1
 
 sentences = []
-for item in subs[1:1000]:
+for item in subs[1:10]:
     
-    sentence = item.text.replace('-', '')
-    sentence = item.text.replace('"', '')
-    sentence = item.text.replace(',', ';')
-    sentence = item.text.replace('.', '')
+    sentence = item.text
+    sentence = sentence.replace('-', '')
+    sentence = sentence.replace('"', '')
+    sentence = sentence.replace(',', ';')
+    sentence = sentence.replace('.', '')
     sentence_cast = sentence.replace(' ', '+')
-    print(index, sentence)
+    print(index, sentence_cast)
     url_to_use = URL_YANDEX.format(YANDEX_TOKEN, sentence_cast)
     try:
         response = urlopen(url_to_use).read()
@@ -79,12 +80,13 @@ for item in subs[1:1000]:
     
     try:
         path_name_mp3 = 'http://vaas.acapela-group.com/Services/Synthesizer?req_voice={0}&req_text={1}&cl_pwd={2}&req_asw_type=STREAM&cl_login=EVAL_VAAS&cl_app=EVAL_3530309'
-        path_name_mp3 = path_name_mp3.format(voice, sentence_cast, pwd)
+        path_name_mp3 = path_name_mp3.format(voice, sentence, pwd)
+        print(path_name_mp3)
         urlretrieve(path_name_mp3, path_to_save+str(index)+'.mp3')
     except:
-        print('problem text to speech: ', text)
+        print('problem text to speech: ', sentence)
     
-    word_spec = WordSpec(index, sentence.replace('"',''), sentence_translated, str(index)+'.mp3')
+    word_spec = WordSpec(index, text, sentence_translated, str(index)+'.mp3')
     sentences.append(word_spec)
     
     index += 1
