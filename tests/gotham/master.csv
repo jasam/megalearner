@@ -1,10 +1,779 @@
 index,sentence,translation,audio_name
-1.0,[<DOM Element: text at 0x7fa8ef6d8178>],Qué? Creo que tengo mi cartera,1.mp3
-2.0,[<DOM Element: text at 0x7fa8ef6d8340>],Yeah Hey!,2.mp3
-3.0,[<DOM Element: text at 0x7fa8ef6d83d8>],Hey,3.mp3
-4.0,[<DOM Element: text at 0x7fa8ef6d85a0>],La detenga!,4.mp3
-5.0,[<DOM Element: text at 0x7fa8ef6d8638>],Psst,5.mp3
-6.0,[<DOM Element: text at 0x7fa8ef6d8768>],Oh,6.mp3
-7.0,[<DOM Element: text at 0x7fa8ef6d8898>],No estaba tan mal Oh,7.mp3
-8.0,[<DOM Element: text at 0x7fa8ef6d89c8>],Infantil tontería,8.mp3
-9.0,[<DOM Element: text at 0x7fa8ef6d8af8>],La actuación estaba bien,9.mp3
+1.0, Oh.  Hey!, Oh. Hey!,1.mp3
+2.0,What? I think she... got my wallet,Qué? Creo que ella... tengo mi billetera,2.mp3
+3.0,Yeah. Hey!,Sí. Hey!,3.mp3
+4.0,Hey; stop!,Hey; parar!,4.mp3
+5.0,Stop her!,La detenga!,5.mp3
+6.0,Psst; psst,Psst; psst,6.mp3
+7.0,Oh; come on; Tom,Oh; venga; Tom,7.mp3
+8.0,It wasn't that bad. Oh; no?,No estaba tan mal. Oh; no?,8.mp3
+9.0,Childish drivel,Infantil tontería,9.mp3
+10.0,The acting was fine; the music was lovely,La actuación estaba bien; la música era preciosa,10.mp3
+11.0,What about you; Bruce?,¿Qué acerca de usted; Bruce?,11.mp3
+12.0,Sorry; Mom; I agree with Dad,Lo siento; Mamá; estoy de acuerdo con Papá,12.mp3
+13.0, It was kinda lame.  Kinda lame?, Era un poco cojo. Un poco cojo?,13.mp3
+14.0,There's no such word as kinda. It was totally lame,No existe tal palabra como poco. Fue totalmente cojo,14.mp3
+15.0,You two; so judgment..,Dos; de modo que el juicio..,15.mp3
+16.0,What's up; folks?,Lo que es; la gente?,16.mp3
+17.0,Stay calm; Bruce,Mantenga la calma; Bruce,17.mp3
+18.0,Give me your money!,Dame tu dinero!,18.mp3
+19.0,No problem,No hay problema,19.mp3
+20.0,We're cooperating,Estamos cooperando,20.mp3
+21.0,The necklace,El collar,21.mp3
+22.0,It's okay,Está bien,22.mp3
+23.0,Easy,Fácil,23.mp3
+24.0,Mom! Mom?,Mamá! Mamá?,24.mp3
+25.0,Dad?,Papá?,25.mp3
+26.0,Dad!,Papá!,26.mp3
+27.0,Dad!,Papá!,27.mp3
+28.0,Sit down!,Siéntense!,28.mp3
+29.0,Don't move! Yeah; don't touch my face!,No se mueva! Sí; no toque mi cara!,29.mp3
+30.0,Shut up!,Cállate!,30.mp3
+31.0,I need my pills,Necesito mis pastillas,31.mp3
+32.0,I need my pills,Necesito mis pastillas,32.mp3
+33.0,You wish,Usted desea,33.mp3
+34.0,Come on! Where are my pills? Back; back,Vamos! Donde están mis pastillas? De vuelta; de vuelta,34.mp3
+35.0, Come on. Give them to me.  Back. Come on, Vienen en. Darles a mí. De la espalda. Vienen en,35.mp3
+36.0,Where are my pills?!,Donde están mis pastillas?!,36.mp3
+37.0,I said give me my pills; bitch,Me dijo que me dan mis pastillas; perra,37.mp3
+38.0,Hold your fire!,Mantenga su fuego!,38.mp3
+39.0,Hold your fire. I got this,Mantenga su fuego. Tengo este,39.mp3
+40.0,Hold your fire,Mantenga su fuego,40.mp3
+41.0,Hold..,Mantenga..,41.mp3
+42.0,Easy; easy,Fácil; fácil,42.mp3
+43.0,Sir;,Sir;,43.mp3
+44.0,look at me,me mira,44.mp3
+45.0,Not at them; look at me,No a ellos; me miran,45.mp3
+46.0,My name's Jim. Jim Gordon. What's yours?,Mi nombre es Jim. Jim Gordon. ¿Cuál es la tuya?,46.mp3
+47.0,I need my pills,Necesito mis pastillas,47.mp3
+48.0,Okay; well; everything's gonna be all right,Bien; bien; todo va a estar bien,48.mp3
+49.0,Look at me; huh?,Mira a mí; ¿eh?,49.mp3
+50.0,Got your pills right here,Consiguió su pastillas de aquí,50.mp3
+51.0,Huh?,Eh?,51.mp3
+52.0,Want some pills?,Quiero unas pastillas?,52.mp3
+53.0,Here you go; here you go; here's some pills for you; all right?,Aquí se ve; aquí se ve; aquí tienes algunas píldoras para usted; todo bien?,53.mp3
+54.0,These aren't my pills,Estas no son mis píldoras,54.mp3
+55.0,Sorry; guys. Didn't mean to bark at you all like that,Lo siento; chicos. No me refiero a ladrar a todos como que,55.mp3
+56.0, Got a little bit carried away.  Get up! Hey!, Se puso un poco demasiado lejos. Levantarse! Hey!,56.mp3
+57.0,Hey; hey; come on; man; take it easy!,Hey; hey; venga; hombre; take it easy!,57.mp3
+58.0,Come on; guys! Hey; hey!,Se enciende; chicos! Hey; hey!,58.mp3
+59.0,What the hell are you doing?,¿Qué diablos estás haciendo?,59.mp3
+60.0,We had the drop on him,Tuvimos la gota sobre él,60.mp3
+61.0,Yeah; well; he's dropped; isn't he?,Sí; bien; ha caído; no es él?,61.mp3
+62.0,You could've gotten hurt. Rookie mistake,Usted podría haber llegado a doler. Error de novato,62.mp3
+63.0,Next time; shoot the son of a bitch,La próxima vez; disparar el hijo de puta,63.mp3
+64.0,If I shoot; that sets everybody off,Si puedo disparar; que los conjuntos de todo el mundo,64.mp3
+65.0,Gunfire every which way,Disparos de armas de fuego; de manera que cada,65.mp3
+66.0,Somebody takes a cop's gun; you shoot him,Alguien toma un policía de arma de fuego; le disparó a él,66.mp3
+67.0,That's basic,Esto es básico,67.mp3
+68.0,Yo; Bullock; Gordon; you're up!,Yo; Bullock; Gordon; eres!,68.mp3
+69.0,Double homicide; Theater District,Doble homicidio; Distrito de los teatros,69.mp3
+70.0,Give me a break; shift's nearly over,Give me a break; desplazamiento casi más de,70.mp3
+71.0,Yeah; nearly,Sí; casi,71.mp3
+72.0,Oh; the legendary Harvey Bullock,Oh; el legendario Harvey Bullock,72.mp3
+73.0, No rest for the wicked; eh?  Tannenbaum; looking crisp, No hay descanso para los malvados; eh? Tannenbaum; mirando crujiente,73.mp3
+74.0,This is my new partner; James Gordon,Esta es mi nueva pareja; James Gordon,74.mp3
+75.0, What do we got?  Just got here myself, ¿Qué tenemos? Acabo de aquí mismo,75.mp3
+76.0,Male; female; gunshot,Masculino; femenino; disparo de arma de fuego,76.mp3
+77.0,Their kid saw the whole thing,Su niño vio toda la cosa,77.mp3
+78.0,Poor bastard hasn't spoke a word yet,Pobre hijo de puta no se habló una palabra todavía,78.mp3
+79.0,My name's James Gordon,Mi nombre es James Gordon,79.mp3
+80.0,I'm a detective,Soy un detective,80.mp3
+81.0,What's your name?,¿Cuál es tu nombre?,81.mp3
+82.0,It's okay. You don't have to talk,Está bien. Usted no tiene que hablar,82.mp3
+83.0,Listen; T.; do me a favor,Escuchar; T.; me hagas un favor,83.mp3
+84.0,You didn't see me; okay?,No vea en mí; ¿de acuerdo?,84.mp3
+85.0,I see you right in front of me,Veo que justo en frente de mí,85.mp3
+86.0, What's your problem?  That's Thomas and Martha Wayne, ¿Cuál es tu problema? Que Thomas y Martha Wayne,86.mp3
+87.0,I don't need that kind of hassle,No necesito ese tipo de problemas,87.mp3
+88.0,Call Major Crimes; they'd love to have this,Llamada de Crímenes Mayores; les encantaría tener este,88.mp3
+89.0,Yeah; but they're not here,Sí; pero no están aquí,89.mp3
+90.0,And your partner is talking to the witness,Y tu pareja te está hablando el testigo,90.mp3
+91.0,So... that makes it your case,Así que... que lo convierte en su caso,91.mp3
+92.0,Bruce,Bruce,92.mp3
+93.0,Mymy name is Bruce Wayne,Mymy nombre es Bruce Wayne,93.mp3
+94.0,Can you tell me what happened; Bruce?,Me puede decir qué pasó; Bruce?,94.mp3
+95.0,When I was about your age;,Cuando yo tenía su edad;,95.mp3
+96.0,a drunk driver hit our car,un conductor ebrio que atropelló a nuestro coche,96.mp3
+97.0,Killed my dad,Mataron a mi papá,97.mp3
+98.0,I was right next to him,Yo estaba junto a él,98.mp3
+99.0,I know how you feel right now,Sé cómo te sientes ahora mismo,99.mp3
+100.0,And I promise you;,Y me prometo a usted;,100.mp3
+101.0,however dark and scary the world might be right now;,sin embargo; oscuro y aterrador; el mundo podría ser ahora;,101.mp3
+102.0,there will be light,habrá luz,102.mp3
+103.0,There will be light; Bruce,Habrá luz; Bruce,103.mp3
+104.0,We just got out of the movies,Le acabo de salir de las películas,104.mp3
+105.0,We were walking through the alley to catch an uptown cab; and..,Íbamos caminando por el callejón a la captura de un uptown cabina; y..,105.mp3
+106.0,a man came out of the shadows,un hombre salió de las sombras,106.mp3
+107.0,Hehe was tall,Jeje; era alto;,107.mp3
+108.0,with a black mask and..,con una máscara negra y..,108.mp3
+109.0,he had a hat and gloves..,él tenía un sombrero y guantes..,109.mp3
+110.0,and shiny shoes,y los zapatos brillantes,110.mp3
+111.0,He took my dad's wallet and my mom's necklace,Él tomó mi papá billetera y mi mamá collar,111.mp3
+112.0,And then he shot them,Y entonces él les disparó,112.mp3
+113.0,for no reason,por ninguna razón,113.mp3
+114.0,I should've done something!,Yo debería haber hecho algo!,114.mp3
+115.0,But I was too scared,Pero yo estaba demasiado asustada,115.mp3
+116.0,There was nothing you could've done to stop what happened,No había nada que podía hacer para evitar lo que sucedió,116.mp3
+117.0,But there is something you can do now,Pero hay algo que usted puede hacer ahora,117.mp3
+118.0,You can be strong,Usted puede ser fuerte,118.mp3
+119.0,Be strong,Ser fuerte,119.mp3
+120.0,I promise you;,Yo prometo;,120.mp3
+121.0,I will find the man who did this,Voy a encontrar al hombre que hizo esto,121.mp3
+122.0,Hey,Hey,122.mp3
+123.0,Who the hell is that?,Que diablos es eso?,123.mp3
+124.0,James Gordon,James Gordon,124.mp3
+125.0,Alfred Pennyworth,Alfred Denarios,125.mp3
+126.0,We're gonna get the guy that did this; sir,Vamos a obtener el tipo que hizo esto; sir,126.mp3
+127.0,New boy; are you?,Chico nuevo; es usted?,127.mp3
+128.0,You could say,Se podría decir,128.mp3
+129.0,Good luck; mate,Buena suerte; mate,129.mp3
+130.0,Come on,Vienen en,130.mp3
+131.0,Don't look. Head up; eyes front,No se ven. Cabeza erguida; los ojos frente a los,131.mp3
+132.0,Don't let them see you crying,No dejes que te vean llorar,132.mp3
+133.0,Shouldn't we be there when they move the victims?,No deberíamos estar allí cuando se mueven las víctimas?,133.mp3
+134.0,Why?,Por qué?,134.mp3
+135.0,Listen; hot shot; do me a favor,Escuchar; hot shot; me hagas un favor,135.mp3
+136.0,Don't start talking to witnesses until I say so,No empiece a hablar a los testigos hasta lo digo yo,136.mp3
+137.0, What's your problem?  My problem; soldier boy;, ¿Cuál es tu problema? Mi problema; soldier boy;,137.mp3
+138.0,you just caught us a gigantic; flaming ball of crap,sólo nos pilló un gigantesco; llamas bola de mierda,138.mp3
+139.0,Oh; yeah; how's that?,Oh; sí; ¿cómo es eso?,139.mp3
+140.0,You never heard of Thomas and Martha Wayne?,Usted nunca oyó hablar de Thomas y Martha Wayne?,140.mp3
+141.0,Yeah; sure; the Wayne Foundation,Sí; seguro; el de la Fundación Wayne,141.mp3
+142.0,Yeah,Sí,142.mp3
+143.0,Two of the richest and most powerful people in Gotham,Dos de las personas más ricas y poderosas en las calles de Gotham,143.mp3
+144.0,You can't begin to imagine the pressure; we don't close this thing quick,No se puede empezar a imaginar la presión; no podemos cerrar esta cosa rápida,144.mp3
+145.0, So let's close it quick.  Yeah; right, Así que vamos a cerrar rápido. Sí; derecho,145.mp3
+146.0,This is random street robbery; Holmes,Esta es la calle al azar robo; Holmes,146.mp3
+147.0,Perp could be any one of 10;000 mopes out there,Asesino podría ser cualquiera de las 10;000 lloriquea por ahí,147.mp3
+148.0,Oh; crap,Oh; mierda,148.mp3
+149.0,Order up!,Orden!,149.mp3
+150.0,Well; well; well; if it isn't Montoya and Allen,Bien; bien; bien; si no se Montoya y Allen,150.mp3
+151.0,Major Crimes Unit,Unidad De Crímenes Mayores,151.mp3
+152.0,This is my new partner; Jim Gordon,Esta es mi nueva pareja; Jim Gordon,152.mp3
+153.0,Nice to meet you,Nice to meet you,153.mp3
+154.0,Hi; Harvey,Hola; Harvey,154.mp3
+155.0,You're on the Waynes; huh? Terrible thing,Estás en la Waynes; ¿eh? Terrible cosa,155.mp3
+156.0,Yeah,Sí,156.mp3
+157.0,Any leads?,Cualquier conduce?,157.mp3
+158.0, Just getting started.  I'll be straight, Acaba de empezar. Voy a ser recto,158.mp3
+159.0,You want us to take it off your hands?,Usted quiere que nosotros para tomarlo de sus manos?,159.mp3
+160.0,No; no; no; no; no; this is our... Hold on; rook. Ah,No; no; no; no; no; esta es nuestra... Hold on; torre. Ah,160.mp3
+161.0,Why you want it?,¿Por qué quieres?,161.mp3
+162.0,You got a lead?,Tienes un plomo?,162.mp3
+163.0,Nah. Just need the press action,Nah. Solo necesitan la medida de prensa,163.mp3
+164.0,I don't know,No sé,164.mp3
+165.0,Come on; Bullock; you know you're scared of this case,Se enciende; el Becerro; usted sabe que usted está asustado de este caso,165.mp3
+166.0, You're damn right I'm scared.  So then do the right thing for once, Estás maldito derecho tengo miedo. Así que; a continuación; hacer lo correcto por una vez,166.mp3
+167.0,For once?,Por una vez?,167.mp3
+168.0,Where the hell you get the nerve to say that to me?,Dónde demonios has sacado la osadía de decir que a mí?,168.mp3
+169.0,You can kiss my ass,Usted puede besar mi culo,169.mp3
+170.0,Okay; you be that way; brother,Bien; que ser de esa manera; el hermano,170.mp3
+171.0,Just trying to be collegial here,Tratando de ser colegial aquí,171.mp3
+172.0,You know; I almost gave it to you;,Sabes; casi me entregué a ti;,172.mp3
+173.0,but you couldn't help yourself; could you?,pero no podía ayudarse a sí mismo; podría usted?,173.mp3
+174.0,You had to go and be disrespectful,Tenía que ir y ser irrespetuoso,174.mp3
+175.0,Okay; Harvey,Bien; Harvey,175.mp3
+176.0,Stay frosty,Stay frosty,176.mp3
+177.0,Good luck,Buena suerte,177.mp3
+178.0,Selfrighteous dogooding skell huggers,Selfrighteous dogooding skell ... ,178.mp3
+179.0,Always badmouthing us,Siempre hablar mal de nosotros,179.mp3
+180.0,like they're such freaking angels. Please,como son tan malditamente ángeles. Por favor,180.mp3
+181.0,As mayor of this great city;,Como alcalde de esta gran ciudad;,181.mp3
+182.0,I swear to you; the perpetrators of this heinous crime,Juro a usted; los autores de este crimen atroz,182.mp3
+183.0,will be captured,será capturado,183.mp3
+184.0,and will be punished to the fullest extent,y serán castigados con todo el rigor,184.mp3
+185.0,I swear that to you,Te juro que a ti,185.mp3
+186.0,Poor bastard. First a crime wave and now this,Pobre hijo de puta. En primer lugar una ola de crímenes y ahora esto,186.mp3
+187.0,You take all the people and resources you need,Se toman todas las personas y los recursos que usted necesita,187.mp3
+188.0,You just close this case,Acaba de cerrar este caso,188.mp3
+189.0,Yes; Captain,Sí; El Capitán,189.mp3
+190.0,Jim; will you give us a minute?,Jim; usted darnos un minuto?,190.mp3
+191.0,Captain,El capitán,191.mp3
+192.0,The answer's no,La respuesta es no,192.mp3
+193.0,Yes! What do I have to do; change his diapers?,Sí! ¿Qué tengo que hacer; en cambio los pañales?,193.mp3
+194.0,You got to be kidding!,Tienes que estar bromeando!,194.mp3
+195.0,I don't care!,No me importa!,195.mp3
+196.0,She said you had to keep me; huh?,Ella dijo que tenía que mantener a mí; ¿eh?,196.mp3
+197.0,Yeah; she did,Sí; ella lo hizo,197.mp3
+198.0,She said you were a war hero,Ella dijo que usted era un héroe de guerra,198.mp3
+199.0,and your daddy was a big shot D.A. back in the olden days;,y tu papá era un gran disparo de D. A. en tiempos de antaño;,199.mp3
+200.0,so I have to keep my trap shut and do as I'm told,así que tengo que mantener mi trampa cerrada y de hacer lo que me dice,200.mp3
+201.0,Ouch,Ouch,201.mp3
+202.0,Listen; kid; you got juice; do me a favor,Escuchar; niño; tienes jugo; me hagas un favor,202.mp3
+203.0,Ask for a transfer,Pedir una transferencia,203.mp3
+204.0,Sorry; this is where the action is. You'll get used to me,Lo siento; aquí es donde está la acción. Te acostumbrarás a mí,204.mp3
+205.0,Jim; you seem like a nice guy;,Jim; usted parece un buen tipo;,205.mp3
+206.0,but this is not a city or a job for nice guys,pero esto no es de una ciudad o de un puesto de trabajo para los chicos buenos,206.mp3
+207.0,You understand?,Usted entiende?,207.mp3
+208.0,No,No,208.mp3
+209.0,And that's your problem,Y ese es tu problema,209.mp3
+210.0,You're a cynic,Eres un cínico,210.mp3
+211.0,A slovenly; lackadaisical cynic,Una desaliñada; displicente cínico,211.mp3
+212.0,You're probably right,Usted está probablemente en lo cierto,212.mp3
+213.0,Okay; soldier boy;,Bueno; soldier boy;,213.mp3
+214.0,let's go roust some muggers,vamos a ir roust algunos de los gamberros,214.mp3
+215.0,Lackadaisical? Hmm,Displicente? Hmm,215.mp3
+216.0,Hey,Hey,216.mp3
+217.0,How you doing?,¿Cómo te va?,217.mp3
+218.0, Guess what this is?  Just tell me; Ed, Adivinar qué es esto? Solo dime; Ed,218.mp3
+219.0,I want riddles; I'll read the funny pages,Quiero acertijos; voy a leer las divertidas páginas,219.mp3
+220.0,It's a .45 caliber 300grain cupronickel wadcutter,Es un calibre .45 300grain cupronickel wadcutter,220.mp3
+221.0,Came out of Thomas Wayne's chest,Salió de Thomas Wayne del pecho,221.mp3
+222.0, That's a sixdollar bullet.  Uhhuh, Eso es un sixdollar de bala. Uhhuh,222.mp3
+223.0,What kind of gun..,Qué tipo de arma..,223.mp3
+224.0,Ahahah; don't ask; just tell,Ahahah; no preguntar; simplemente dile,224.mp3
+225.0,It's from a pistol not known by our database,Es a partir de una pistola no se conoce por nuestra base de datos,225.mp3
+226.0,And no print; either,Y no impresión; ,226.mp3
+227.0,What else you got?,¿Qué más tienes?,227.mp3
+228.0,What's nowhere but everywhere; except where something is?,¿Qué es la nada; sino en todas partes; excepto donde algo?,228.mp3
+229.0,Nothing,Nada,229.mp3
+230.0,You need professional help; Nygma; seriously,Usted necesita ayuda profesional; Nygma; en serio,230.mp3
+231.0,Let's go,Vamos a ir,231.mp3
+232.0,So I'm thinking; our man wears shiny shoes;,Así que estoy pensando; nuestro hombre se viste con zapatos brillantes;,232.mp3
+233.0,uses highend ammo; and nobody on the street knows who he is?,utiliza la gama alta de munición; y nadie en la calle sabe quién es él?,233.mp3
+234.0,Maybe he's not from the street,Quizá él no es de la calle,234.mp3
+235.0,Like a debonair playboy robber; does it for kicks?,Como un elegante playboy ladrón; ¿por diversión?,235.mp3
+236.0,Who would pretend to be a street robber; huh?,Que pretende ser una calle ladrón; ¿eh?,236.mp3
+237.0,A professional contract killer,Un asesino a sueldo profesional,237.mp3
+238.0,or somebody with a personal grudge against the Waynes,o alguien con un rencor personal contra los Waynes,238.mp3
+239.0,How did this professional know the Waynes would be coming down that alley?,¿Cómo este profesional de la Waynes vendría por ese callejón?,239.mp3
+240.0,That's a good question,Esa es una buena pregunta,240.mp3
+241.0,Essen said we don't catch a break in the first 48;,Essen dijo que no tomar un descanso en las primeras 48;,241.mp3
+242.0,it's time to go see Fish Mooney,es hora de ir a ver a Fish Mooney,242.mp3
+243.0,Fish Mooney? That works for Carmine Falcone?,Fish Mooney? Que trabaja para Carmine Falcone?,243.mp3
+244.0,Her. Theater District's her turf,Ella. Distrito de los teatros de su césped,244.mp3
+245.0,Anything happens down there; she hears about it,Algo pasa ahí abajo; ella escucha,245.mp3
+246.0,Tell Fish I'm here,Dígale a los Peces que yo estoy aquí,246.mp3
+247.0,I still care for you; deeply; but I don't believe,Yo todavía cuidar de usted; profundamente; pero no creo,247.mp3
+248.0,that you still care for me anymore,que todavía te importa para mí más,248.mp3
+249.0,I cccare for you!,Yo cccare para usted!,249.mp3
+250.0,Then where's my money?,Entonces; ¿dónde está mi dinero?,250.mp3
+251.0,I'll get it; I'll get it; I'll get it,Voy a llegar; voy a llegar; voy a llegar,251.mp3
+252.0,Boy!,Muchacho!,252.mp3
+253.0,Sorry,Lo siento,253.mp3
+254.0,If you let this hair go frizzy; you will be,Si deja que el cabello vaya muy rizado; usted será,254.mp3
+255.0,Ma'am; Detective Bullock is here,Señora; el Detective Bullock está aquí,255.mp3
+256.0, Keep him warm.  Yes; ma'am, Mantenerlo caliente. Sí; señora,256.mp3
+257.0,Hey; Oswald?,Hey; Oswald?,257.mp3
+258.0,You want a turn? May I?,Quieres un turno? Puede Que Yo?,258.mp3
+259.0,Knock yourself out; kid,Tú mismo; kid,259.mp3
+260.0,Thank you; Mr. Gilzean,Gracias; Señor Gilzean,260.mp3
+261.0, Harvey.  Fish, Harvey. Los peces,261.mp3
+262.0,Where have you been?,Donde has estado?,262.mp3
+263.0,Where haven't I been?,Donde no he sido?,263.mp3
+264.0, Who's the friend?  Detective James Gordon; ma'am, Quién es el amigo? El Detective James Gordon; señora,264.mp3
+265.0,Well; aren't you a cool glass of milk?,Bien; no es usted un fresco vaso de leche?,265.mp3
+266.0,Ma'am; was that screaming we heard back there?,Señora; estaba gritando que hemos escuchado de nuevo allí?,266.mp3
+267.0,Yes; my boys are watching a scary movie,Sí; mis hijos están viendo una película de miedo,267.mp3
+268.0,Really? No,De verdad? No,268.mp3
+269.0,Actually; one of my staff has been stealing money from me;,De hecho; uno de mi equipo ha estado robando dinero de mí;,269.mp3
+270.0,so we're beating his punk ass,por lo tanto; estamos golpeando su culo punk,270.mp3
+271.0,Relax; junior. Fish gets some leeway,Relajarse; junior. Los peces obtiene un margen de maniobra,271.mp3
+272.0,Her staff are rough characters; need firm handling,Su personal son personajes rudos; necesidad de la empresa de manejo de,272.mp3
+273.0,So; this isn't a social visit then?,Así; este no es un social de visita?,273.mp3
+274.0,Unfortunately not,Por desgracia; no,274.mp3
+275.0,Brass sent me by to talk to you about the Wayne murders,De latón me envió a hablar con usted acerca de los asesinatos Wayne,275.mp3
+276.0,Terrible thing,Terrible cosa,276.mp3
+277.0,Listen; junior; if you're worried;,Escuchar; junior; si usted está preocupado;,277.mp3
+278.0,why don't you go back there and see if anyone wants to press charges?,¿por qué no volver allí y ver si alguien quiere presentar cargos?,278.mp3
+279.0,If that's okay with you; Fish,Si eso está bien con usted; Pescado,279.mp3
+280.0,Mi casa es su casa,Mi casa es su casa,280.mp3
+281.0, Oswald; whoa.  Yeah; take it easy; penguin, Oswald; whoa. Sí; tómelo con calma; penguin,281.mp3
+282.0,You know I don't like to be called that,Usted sabe que yo no se como se llama eso,282.mp3
+283.0,Ooh; scary,Ooh; miedo,283.mp3
+284.0,How's everybody doing?,¿Cómo está todo el mundo haciendo?,284.mp3
+285.0,Who are you?,¿Quién eres tú?,285.mp3
+286.0,James Gordon; GCPD,James Gordon; GCPD,286.mp3
+287.0,Oh,Oh,287.mp3
+288.0,You came with Harvey; huh?,Vino con Harvey; ¿eh?,288.mp3
+289.0,Glad to know you; James. I'm Butch Gilzean,Me alegra saber de usted; James. Soy Butch Gilzean,289.mp3
+290.0,Drop the bat,Soltar el bate,290.mp3
+291.0,Ah; come on now,Ah; venga ahora,291.mp3
+292.0,Oswald and Raoul here,Oswald y Raoul aquí,292.mp3
+293.0,were just having a little fun; weren't you; boys?,acaba de tener un poco de diversión; no; los niños?,293.mp3
+294.0,All in fun,Todo en la diversión,294.mp3
+295.0,No problem,No hay problema,295.mp3
+296.0,Fun,Divertido,296.mp3
+297.0,You a new guy; huh?,Un nuevo chico; ¿eh?,297.mp3
+298.0,How do you like Gotham so far?,¿Cómo te gusta Gotham hasta ahora?,298.mp3
+299.0,Well enough,Bastante bien,299.mp3
+300.0,See you around,Ver todo,300.mp3
+301.0,Oh; hey,Oh; hey,301.mp3
+302.0,Everything all right back there?,Todo allí atrás?,302.mp3
+303.0,It's always good to see you; Harvey,Siempre es bueno ver; Harvey,303.mp3
+304.0,Wow,Wow,304.mp3
+305.0,And look at you in your excellent suit,Y mire usted; en su excelente traje,305.mp3
+306.0,You know; I'm so happy,Usted sabe; yo soy tan feliz,306.mp3
+307.0,you don't have to wear that silly uniform anymore,usted no tendrá que usar ese tonto uniforme más,307.mp3
+308.0,You told me it looked good,Usted me dijo que se veía bien,308.mp3
+309.0,I lied,Me mintió,309.mp3
+310.0,You ready to rock and roll?,Estás listo para el rock and roll?,310.mp3
+311.0,Uh... Barbara; I'm beat,Uh... Barbara; estoy beat,311.mp3
+312.0,Do we really have to go to this thing?,¿Realmente tenemos que ir a esta cosa?,312.mp3
+313.0,No,No,313.mp3
+314.0,Of course not,Por supuesto que no,314.mp3
+315.0, Thank you.  You owe me, Gracias. Que me debes,315.mp3
+316.0,So..,Así que..,316.mp3
+317.0,talk to me,hablar conmigo,317.mp3
+318.0,We're getting nowhere on the Wayne case,Estamos llegando a ninguna parte en el caso de Wayne,318.mp3
+319.0,I made a promise to Bruce Wayne and I can't deliver,Me hice una promesa a Bruce Wayne y no puedo entregar,319.mp3
+320.0,But you will,Pero usted,320.mp3
+321.0,I don't know,No sé,321.mp3
+322.0,Maybe I'm out of my depth,Tal vez estoy fuera de mi profundidad,322.mp3
+323.0,Hey,Hey,323.mp3
+324.0,I very much doubt you're out of your depth;,Dudo mucho que esté fuera de su profundidad;,324.mp3
+325.0,but even if you are;,pero incluso si estás;,325.mp3
+326.0,you know how to swim; don't you?,se sabe nadar; no?,326.mp3
+327.0,Yes; I do,Sí; tengo que hacer,327.mp3
+328.0,So swim,Para nadar,328.mp3
+329.0,I'll swim; you're right,Voy a nadar; tienes razón,329.mp3
+330.0,You hungry?,Tienes hambre?,330.mp3
+331.0,I'm all right,Estoy bien,331.mp3
+332.0,Had a few dogs,Había un par de perros,332.mp3
+333.0,When I am Mrs. Gordon; and you are living here all the time;,Cuando yo soy la Señora Gordon; y los que viven aquí todo el tiempo;,333.mp3
+334.0,I am gonna put you on a proper; healthy diet,Me voy a poner en un adecuado; dieta saludable,334.mp3
+335.0,Mmhmm,Mmhmm,335.mp3
+336.0,I got a lead,Tengo un plomo,336.mp3
+337.0,Meet me at Fourth and Grundy in an hour,Me encuentro en la Cuarta y Grundy en una hora,337.mp3
+338.0,On my way,En mi camino,338.mp3
+339.0,Hey,Hey,339.mp3
+340.0,Whoa,Whoa,340.mp3
+341.0,You all right?,Estás bien?,341.mp3
+342.0, Couple drinks; I'll be fine.  Bullock.., Par de bebidas; yo voy a estar bien. Bullock..,342.mp3
+343.0,Fish Mooney heard from one of her fences;,Fish Mooney oído de uno de sus cercas;,343.mp3
+344.0,guy tried to sell him an antique fourstrand pearl necklace,chico intentó venderle un antiguo fourstrand collar de perlas,344.mp3
+345.0,with gold settings; one strand broken,con el oro de la configuración; uno de los hilos rotos,345.mp3
+346.0,Like Martha Wayne was wearing,Como Martha Wayne llevaba,346.mp3
+347.0,Guy's name is Mario Pepper,Chico nombre es Mario; Pimienta,347.mp3
+348.0,Career street thug,Carrera gamberro de la calle,348.mp3
+349.0,robbery; assault; rape; extortion; drug dealing,robo; asalto; violación; extorsión; el tráfico de drogas,349.mp3
+350.0,Nice guy,Buen chico,350.mp3
+351.0,Hi,Hola,351.mp3
+352.0,What's your name? Ivy,¿Cuál es tu nombre? Ivy,352.mp3
+353.0,Ivy. Is Daddy home?,Ivy. Es Papá en casa?,353.mp3
+354.0,You don't want to talk to Daddy,No quieres hablar con Papá,354.mp3
+355.0,Why's that; Ivy?,¿Por qué es eso; la Hiedra?,355.mp3
+356.0,He's mean,Él significa,356.mp3
+357.0,Hey; who is it?!,Hola; ¿quién es?!,357.mp3
+358.0,Mario Pepper; we need to talk,Mario Pimienta; tenemos que hablar,358.mp3
+359.0,I've done nothing,No he hecho nada,359.mp3
+360.0,So it'll be a pleasant talk,Así que voy a tener una conversación agradable,360.mp3
+361.0,Where were you last Saturday night around 9:30?,¿Dónde estaba usted el pasado sábado por la noche alrededor de las 9:30?,361.mp3
+362.0,I was here at home with my family,Yo estaba aquí en la casa con mi familia,362.mp3
+363.0,That's right. He was here,Eso es correcto. Él estaba aquí,363.mp3
+364.0,Pearl necklace sound familiar?,Collar de perlas familiar del sonido?,364.mp3
+365.0,No,No,365.mp3
+366.0,Then I guess you don't mind we; uh; take a look around the place,Entonces supongo que no te importa nosotros; uh; tome una mirada alrededor del lugar,366.mp3
+367.0,You need a warrant,Usted necesita una orden,367.mp3
+368.0,You're a felon on parole,Eres un delincuente en libertad condicional,368.mp3
+369.0,All we need is reasonable cause,Todo lo que necesitamos es una causa razonable,369.mp3
+370.0,Stop! Stop or I'll shoot!,Stop! Alto o disparo!,370.mp3
+371.0,Out of the way!,Fuera del camino!,371.mp3
+372.0,Thanks,Gracias,372.mp3
+373.0,Probably? I had to,Probablemente? Tuve que,373.mp3
+374.0,We got him!,Lo tenemos!,374.mp3
+375.0,We got him,Lo tenemos,375.mp3
+376.0,Huh?,Eh?,376.mp3
+377.0,Hmm?,Hmm?,377.mp3
+378.0,Mario Pepper was framed by Fish Mooney and the cops,Mario Pepper fue enmarcado por Fish Mooney y los policías,378.mp3
+379.0,I saw Ms. Mooney with Martha Wayne's necklace,Vi a la Señora Mooney con Martha Wayne collar de la,379.mp3
+380.0,She was discussing how to get it into Pepper's home,Ella estaba discutiendo cómo llegar a la casa de Pimienta,380.mp3
+381.0,inside a bag of drugs,dentro de una bolsa de drogas,381.mp3
+382.0,This was shortly after she met with,Esto fue poco después de que ella se reunió con,382.mp3
+383.0,Detectives Bullock and Gordon from the homicide squad,Detectives de la Bullock y Gordon de la brigada de homicidios de la,383.mp3
+384.0,Mooney works with Carmine Falcone's mob,Mooney trabaja con Carmine Falcone de la mafia,384.mp3
+385.0,You saying Falcone had the Waynes killed?,Estás diciendo Falcone tenido la Waynes matado?,385.mp3
+386.0,I'm just telling you what I saw,Sólo estoy diciendo lo que vi,386.mp3
+387.0,Why? Why snitch on your own boss?,Por qué? Por qué delatar a su propio jefe?,387.mp3
+388.0,I confess; that..,Confieso; que..,388.mp3
+389.0,that poor orphan boy pricked my conscience,que pobre huérfana muchacho tocó mi conciencia,389.mp3
+390.0,Nah,Nah,390.mp3
+391.0,You want to push Fish out; huh?,Usted quiere empujar los Peces; ¿eh?,391.mp3
+392.0,That's beside the point,Que al lado de el punto,392.mp3
+393.0,I've done my civic duty,Yo he hecho mi deber cívico,393.mp3
+394.0,Good day to you both,Buen día a los dos,394.mp3
+395.0,You kept your promise,Usted mantiene su promesa,395.mp3
+396.0,Thank you,Gracias,396.mp3
+397.0,I'm sorry you didn't see a trial,Siento mucho que no veía un juicio,397.mp3
+398.0,That's okay,Que bien,398.mp3
+399.0,Renee,Renee,399.mp3
+400.0,Long time,Mucho tiempo,400.mp3
+401.0,Yeah,Sí,401.mp3
+402.0,Sorry to drop by unexpected like this,Lo siento; con una caída inesperada como esta,402.mp3
+403.0,How have you been?,¿Cómo han estado?,403.mp3
+404.0,I'm good,Soy bueno,404.mp3
+405.0, You?  All good, Usted? Todo bien,405.mp3
+406.0,You're running an art gallery now; right?,Usted está ejecutando una galería de arte en la actualidad; a la derecha?,406.mp3
+407.0, Yeah.  That's so cool, Sí. Que es lo bueno,407.mp3
+408.0,And I'm engaged,Y estoy comprometido,408.mp3
+409.0,That's why I'm here,Es por eso que estoy aquí,409.mp3
+410.0,Oh?,Oh?,410.mp3
+411.0,The GCPD framed Mario Pepper for the murder of the Waynes,El GCPD enmarcada Mario Pimienta por el asesinato de los Waynes,411.mp3
+412.0,What?,Qué?,412.mp3
+413.0,They framed and killed an innocent man,Se enmarca y mató a un hombre inocente,413.mp3
+414.0,And you're here to tell me that James was in on this?,Y estás aquí para decirme que James estaba en esto?,414.mp3
+415.0, Yes.  And what's your proof?, Sí. ¿Y cuál es tu prueba?,415.mp3
+416.0,I can't tell you; but it's the truth,Yo no te puedo decir; pero es la verdad,416.mp3
+417.0,James Gordon is not a good guy,James Gordon no es un buen tipo,417.mp3
+418.0,You deserve better,Se merecen algo mejor,418.mp3
+419.0,James Gordon is the most honest man I've ever met,James Gordon es el hombre más honesto que he conocido,419.mp3
+420.0,He's not capable of doing that,Él no es capaz de hacer que,420.mp3
+421.0,You sure you know what he's capable of?,Estás seguro de saber lo que es capaz de?,421.mp3
+422.0,Yes; thank you. I know him,Sí; gracias. Yo lo sé,422.mp3
+423.0,Does he know you?,¿Sabe usted?,423.mp3
+424.0,Don't,No,424.mp3
+425.0,Like I know you?,Como sé que usted?,425.mp3
+426.0,Here you are,Aquí están,426.mp3
+427.0,Barbara?,Barbara?,427.mp3
+428.0,What's wrong?,Qué tiene de malo?,428.mp3
+429.0,Did you frame Mario Pepper?,¿Marco de Mario Pimienta?,429.mp3
+430.0, No.  I knew it, No. Yo sabía que,430.mp3
+431.0,Who told you that Pepper was framed?,Quien te dijo que la Pimienta se enmarca?,431.mp3
+432.0,It doesn't matter; as long as it's not true,No importa; siempre y cuando no es cierto,432.mp3
+433.0,It's not. Who told you it was?,No. Quien te dijo que lo era?,433.mp3
+434.0,Nobody,Nadie,434.mp3
+435.0,Bee; I know when you're lying,Abeja; yo sé que cuando estás mintiendo,435.mp3
+436.0,Montoya!,Montoya!,436.mp3
+437.0,What's your evidence that Pepper was framed?,¿Cuál es tu evidencia de que la Pimienta se enmarca?,437.mp3
+438.0,I was wrong to reveal that information to Barbara,Me equivoqué a revelar esa información a Barbara,438.mp3
+439.0, We're old friends.  I asked what evidence you have, Somos viejos amigos. Me preguntó qué pruebas tienes,439.mp3
+440.0,You'll see the evidence when we get you,Vas a ver la evidencia de cuando te,440.mp3
+441.0,and your crooked friends into a courtroom,y su torcida amigos en una sala de la corte,441.mp3
+442.0,We're working on it,Estamos trabajando en ello,442.mp3
+443.0,Save your energy,Guarde su energía,443.mp3
+444.0,If Pepper was framed; I'll find out,Si la Pimienta se enmarcó; voy a averiguar,444.mp3
+445.0,Hey. We got a problem here; Gordon?,Hey. Tenemos un problema aquí; Gordon?,445.mp3
+446.0,And then you and you just need to stay out of my way,Y entonces usted y usted sólo tiene que mantenerse fuera de mi camino,446.mp3
+447.0, Mrs. Pepper...  Go away, La señora Pimienta... desaparece,447.mp3
+448.0,Ma'am... if your husband was innocent; you need to talk to me,Señora... si su marido era inocente; usted necesita hablar conmigo,448.mp3
+449.0,If your husband didn't kill the Waynes; how did he come to have,Si su marido no la de matar a los Waynes; cómo había llegado a tener,449.mp3
+450.0,Martha Wayne's necklace?,Martha Wayne del collar?,450.mp3
+451.0,You bastards planted it on him,Hijos de puta plantado en él,451.mp3
+452.0,Bastards,Hijos de puta,452.mp3
+453.0,Alice; how would the police have the necklace?,Alice; ¿cómo sería la policía tiene el collar?,453.mp3
+454.0, We didn't kill the Waynes.  So you say, Nosotros no matar a los Waynes. Así que le dices,454.mp3
+455.0,God knows my husband had his demons;,Dios sabe que mi marido tenía sus demonios;,455.mp3
+456.0,but he never killed nobody,pero él nunca mató a nadie,456.mp3
+457.0,Can I see his shoes?,Puedo ver sus zapatos?,457.mp3
+458.0,Shoes?,Los zapatos?,458.mp3
+459.0,This is all of them?,Esto es todo de ellos?,459.mp3
+460.0,Uhhuh,Uhhuh,460.mp3
+461.0,Damn,Maldito,461.mp3
+462.0,Framed?,Enmarcado?,462.mp3
+463.0,How you figure?,Cómo la figura?,463.mp3
+464.0,You were there. We framed him?,De que estaban allí. Se enmarcó él?,464.mp3
+465.0,Somebody could've planted the necklace on Pepper,Alguien podría haber plantado el collar de Pimienta,465.mp3
+466.0,for us to find,para nosotros encontrar,466.mp3
+467.0,Fish Mooney could've set the whole thing up,Fish Mooney ha podido establecer toda la cosa,467.mp3
+468.0,Why?,Por qué?,468.mp3
+469.0,To cover up for the real killer,Para encubrir el verdadero asesino,469.mp3
+470.0,Mooney works for Falcone,Mooney obras de Falcone,470.mp3
+471.0,Maybe Falcone wanted the Waynes killed,Tal vez Falcone quería que el Waynes muertos,471.mp3
+472.0,Whoawhoawhoa; wait; wait,Whoawhoawhoa; wait; wait,472.mp3
+473.0,Why would such a nutty idea even enter your head?,¿Por qué tal una idea disparatada incluso entrar en la cabeza?,473.mp3
+474.0,Montoya from MCU,Montoya de MCU,474.mp3
+475.0,That pillhead loony bird? What's her proof?,Que pillhead loony pájaro? ¿Cuál es su prueba?,475.mp3
+476.0,Wouldn't tell me. Didn't trust me,No me decía. No confiaba en mí,476.mp3
+477.0,She doesn't have any,Ella no tiene ningún,477.mp3
+478.0,If they did; they would've used it,Si ellos hicieron; ellos hubiesen utilizado,478.mp3
+479.0,Pepper didn't wear shiny shoes,La pimienta no usar zapatos brillantes,479.mp3
+480.0,He didn't own any shiny shoes,Él no posee ninguno de los zapatos brillantes,480.mp3
+481.0,Shiny shoes! Mother of God,Los zapatos brillantes! Madre de Dios,481.mp3
+482.0,Shiny shoes,Los zapatos brillantes,482.mp3
+483.0,Just suppose for a moment; just suppose,Supón por un momento; sólo suponga,483.mp3
+484.0,Pepper was innocent,La pimienta era inocente,484.mp3
+485.0,I killed him,Me mató,485.mp3
+486.0,We killed him,Nosotros le matamos,486.mp3
+487.0,We killed him,Nosotros le matamos,487.mp3
+488.0,We'd lose our jobs at the very least,Nos gustaría perder nuestros puestos de trabajo; al menos;,488.mp3
+489.0,The case is closed. Forget about it,El caso está cerrado. Olvidarse de él,489.mp3
+490.0,Even if the real killers are still out there?,Incluso si los verdaderos asesinos están todavía allí?,490.mp3
+491.0,Yes,Sí,491.mp3
+492.0,This is very perilous stuff you're messing with,Esto es muy peligroso cosas que usted está jugando con,492.mp3
+493.0,Listen to me; for once; Jim,Me escuchan; por una vez; Jim,493.mp3
+494.0,Forget about it,Olvidarse de él,494.mp3
+495.0,Detective Gordon,El Detective Gordon,495.mp3
+496.0,Tell Mooney I'm here,Dígale a Mooney estoy aquí,496.mp3
+497.0, May I ask why?  No, Puedo preguntar por qué? No,497.mp3
+498.0,No. Yes,No. Sí,498.mp3
+499.0,James Gordon,James Gordon,499.mp3
+500.0,How nice,Qué bonito,500.mp3
+501.0,Day I met you; when I was out back with your boys;,El día que te conocí; cuando estaba en la parte de atrás con sus niños;,501.mp3
+502.0,what did you and Harvey talk about?,¿qué hizo que usted y Harvey hablar?,502.mp3
+503.0,Should you ask Harvey?,Se le debe preguntar a Harvey?,503.mp3
+504.0,He's your partner,Él es tu pareja,504.mp3
+505.0,I'm afraid he might lie,Tengo miedo de que podría estar,505.mp3
+506.0,Hmm,Hmm,506.mp3
+507.0,He might,Él podría,507.mp3
+508.0,And you think I'll tell you the truth?,Y usted piensa que yo voy a decir la verdad?,508.mp3
+509.0,You just did,Usted acaba de hacer,509.mp3
+510.0,James; wait,James; esperar,510.mp3
+511.0,You have a little danger in your eye,Usted tiene un poco de peligro en su ojo,511.mp3
+512.0,I wonder what you plan to do with that,Me pregunto qué piensa hacer con eso,512.mp3
+513.0,You'll have to wait and see,Vas a tener que esperar y ver,513.mp3
+514.0,I hate surprises,Odio las sorpresas,514.mp3
+515.0,Detective Bullock?,El Detective Bullock?,515.mp3
+516.0,Miss Kean,Miss Kean,516.mp3
+517.0,Uh; James went for a walk last night and he never came back,Uh; James fue a dar un paseo ayer por la noche y nunca volvió,517.mp3
+518.0,Have you heard from him?,Habéis oído hablar de él?,518.mp3
+519.0,I'm really worried about him,Estoy realmente preocupada por él,519.mp3
+520.0,He's on a stakeout,Él está en un replanteo,520.mp3
+521.0,Yeah,Sí,521.mp3
+522.0,His phone probably ran out of juice is all,Su teléfono probablemente acabó el jugo es todo,522.mp3
+523.0,Oh,Oh,523.mp3
+524.0,Right. Well; that's a relief,A la derecha. Bien; eso es un alivio,524.mp3
+525.0,Thank you. No problem,Gracias. No hay problema,525.mp3
+526.0,Wait! Wait!,Espera! Espera!,526.mp3
+527.0,Wait,Esperar,527.mp3
+528.0,Shut up,Cállate,528.mp3
+529.0,Hey; what are you doing?,Hola; ¿qué estás haciendo?,529.mp3
+530.0,We're over here; you'd get a better angle,Estamos aquí; te gustaría obtener un mejor ángulo,530.mp3
+531.0,What? You're a director now?,Qué? Usted es un director de ahora?,531.mp3
+532.0,Get fresh; I'm just saying,Fresco; sólo estoy diciendo,532.mp3
+533.0,Hey; Butch!,Hey; Butch!,533.mp3
+534.0,Harvey,Harvey,534.mp3
+535.0,Who told you we'd be here?,Quien te dijo que estaría aquí?,535.mp3
+536.0,Everybody knows this is where you..,Todo el mundo sabe que esto es donde usted..,536.mp3
+537.0,Take your problems,Tome sus problemas,537.mp3
+538.0,That's my partner you got there,Ese es mi pareja que tienes ahí,538.mp3
+539.0,Expartner,Expartner,539.mp3
+540.0,Oh,Oh,540.mp3
+541.0,Let me talk to Fish,Déjame hablar con los Peces,541.mp3
+542.0,I'm not afraid of death so much as I am of dying,No tengo miedo de la muerte tanto como yo lo soy de morir,542.mp3
+543.0,I; um... I want to die how my father died;,Yo; um... yo quiero morir como mi padre murió;,543.mp3
+544.0,peacefully in his sleep,pacíficamente en su sueño,544.mp3
+545.0,Not like his screaming; terrified passengers,No como sus gritos; aterrorizados pasajeros,545.mp3
+546.0,Yeah?,Sí?,546.mp3
+547.0,Yeah. Bullock showed up at the plant,Sí. Bullock se presentaron en la planta,547.mp3
+548.0, Wants to talk to you.  Put him on, Quiere hablar con usted. Lo puso en,548.mp3
+549.0,Give me a moment; kid,Dame un momento; kid,549.mp3
+550.0,You're doing good,Estás haciendo el bien,550.mp3
+551.0, Fish?  Speaking, Los peces? Hablando,551.mp3
+552.0,Don't be like that,No sean así,552.mp3
+553.0,Listen; you got to let my boy go,Escucha; tienes que dejar que mi niño vaya,553.mp3
+554.0,How long we been friends?,Cuánto tiempo hemos sido amigos?,554.mp3
+555.0,For a long time; until today,Durante mucho tiempo; hasta el día de hoy,555.mp3
+556.0,I did a big favor for you and your little pals;,Me hizo un gran favor a ti y a tu pequeño pals;,556.mp3
+557.0,and now it's all about to blow up in my face,y ahora todo está a punto de explotar en mi cara,557.mp3
+558.0,on account of your stupidity,en la cuenta de su estupidez,558.mp3
+559.0,Look; the kid's not your problem here,Mira; el niño no es su problema aquí,559.mp3
+560.0,He was hipped to the frame by Major Crimes,Fue transportada a la trama de Crímenes Mayores de la,560.mp3
+561.0,They're gonna be coming after you,Ellos van a venir después de que usted,561.mp3
+562.0,How did they get onto me?,Cómo llegó a mí?,562.mp3
+563.0,Usual way; I guess,Forma habitual; supongo,563.mp3
+564.0,Somebody talked,Alguien habló,564.mp3
+565.0,Huh. Not one of my people,Eh. No es uno de mi pueblo,565.mp3
+566.0,That's what everybody says,Eso es lo que todo el mundo dice,566.mp3
+567.0,True,Cierto,567.mp3
+568.0,Listen; you got to let my boy go. Hmm?,Escucha; tienes que dejar que mi hijo se vaya. Hmm?,568.mp3
+569.0,You kill my partner; I got to come after you,Matar a mi pareja; me fui a venir después de que usted,569.mp3
+570.0,I don't want to do it; but how am I gonna look;,No quiero hacerlo; pero; ¿cómo voy a mirar;,570.mp3
+571.0,you kill my partner; I don't make a move?,matar a mi pareja; yo no hacer un movimiento?,571.mp3
+572.0,All right,Todos los derecho,572.mp3
+573.0,Well; you have to promise me that you'll keep him under control,Bien; usted tiene que me prometas que vas a mantenerlo bajo control,573.mp3
+574.0, I promise.  Cool, Te lo prometo. Cool,574.mp3
+575.0,Put Butch on; please,Poner Butch; por favor,575.mp3
+576.0,Yeah; boss?,Sí; jefe?,576.mp3
+577.0,That son of a bitch just threatened me,Que hijo de puta solo me amenazó,577.mp3
+578.0,You hang him up with his partner,Colgar de él con su socio,578.mp3
+579.0,You got it,Lo tienes,579.mp3
+580.0,Hey; how you doing?,Hey; ¿cómo te va?,580.mp3
+581.0,I'm good. We're going home,Yo estoy bien. Vamos a casa,581.mp3
+582.0, Yeah?  Gentlemen;, Sí? Señores;,582.mp3
+583.0,I'm just glad everything could work out..,Me alegro de que todo se puede trabajar..,583.mp3
+584.0,Cops,Policías,584.mp3
+585.0,Bless your heart,Bendice a tu corazón,585.mp3
+586.0,Would you be a sweet boy and rub my feet?,Te gustaría ser un dulce chico y frotar mis pies?,586.mp3
+587.0,Give me a moment; darling. I haven't forgotten about you,Dame un momento; darling. No he olvidado a usted,587.mp3
+588.0,I like you. You're funny,Me gusta usted. Eres gracioso,588.mp3
+589.0,Now; this amateur nonsense is a good sign,Ahora; este aficionado sin sentido es una buena señal,589.mp3
+590.0,There used to be some discipline,Solía haber un poco de disciplina,590.mp3
+591.0,Falcone is getting old and soft,Falcone se está poniendo viejo y suave,591.mp3
+592.0,It's time,Es el momento,592.mp3
+593.0,Somebody has to take over; it might as well be me,Alguien tiene que asumir; que bien podría ser yo,593.mp3
+594.0,Yes; it might as well,Sí; es posible que así,594.mp3
+595.0,And you; you're like a son to me; you know that; Oswald?,Y tú; eres como un hijo para mí; tú sabes que; Oswald?,595.mp3
+596.0,I feel that way also,Me siento de esa manera también,596.mp3
+597.0,Which is what I don't understand,Que es lo que no entiendo,597.mp3
+598.0,After all I've done for you;,Después de todo lo que he hecho para usted;,598.mp3
+599.0,and right when I'm on the verge of great things;,y justo cuando estoy a punto de hacer grandes cosas;,599.mp3
+600.0,you betray me,se acerca el que me entrega,600.mp3
+601.0,Why would you betray your mother?,¿Por qué habría de traicionar a su madre?,601.mp3
+602.0,II... I don't know what you mean,II... no sé a qué te refieres,602.mp3
+603.0,It was you,Fue usted,603.mp3
+604.0,You snitched to the MCU,Usted snitched a la MCU,604.mp3
+605.0,You want to know how I know?,Quieres saber cómo lo sé?,605.mp3
+606.0,Because only you saw me with the pearls,Porque sólo tú me vio con las perlas,606.mp3
+607.0,No one else,Nadie más,607.mp3
+608.0,It was Gilzean,Fue Gilzean,608.mp3
+609.0,He's the snitch,Él es el soplón,609.mp3
+610.0,No,No,610.mp3
+611.0, Gilzean is loyal.  So am I, Gilzean es leal. Así soy yo,611.mp3
+612.0,I would open a vein right here and now if you asked me to,Me gustaría abrir una vena aquí y ahora; si me preguntas a,612.mp3
+613.0,Go on; then,Ir; entonces,613.mp3
+614.0,Open one,Abrir una,614.mp3
+615.0,I... I was speaking poetically,Yo... yo estaba hablando poéticamente,615.mp3
+616.0,Prove it,Probarlo,616.mp3
+617.0,Prove your loyalty; my little penguin,Demostrar su lealtad; mi pequeño pingüino,617.mp3
+618.0,Please; Ms. Mooney,Por Favor; La Señora Mooney,618.mp3
+619.0,Please don't!,Por favor; no!,619.mp3
+620.0,You broke... my... heart!,Se rompió... mi... corazón!,620.mp3
+621.0,How you doing?,¿Cómo te va?,621.mp3
+622.0,Been better,Sido mejor,622.mp3
+623.0,Thanks for trying to help,Gracias por tratar de ayudar,623.mp3
+624.0,Wish I hadn't,Deseo que no me había,624.mp3
+625.0,Did you just slap my hand?,¿Usted acaba de bofetada de mi mano?,625.mp3
+626.0,Hey; Butch!,Hey; Butch!,626.mp3
+627.0,Yeah; save your breath,Sí; guardar tu aliento,627.mp3
+628.0,Look; if it was up to me;,Mira; si fuera por mí;,628.mp3
+629.0,you'd get a bullet in the head and a decent funeral;,usted recibe una bala en la cabeza y un funeral decente;,629.mp3
+630.0,but Fish has her ways,pero el Pescado tiene sus formas,630.mp3
+631.0,Yo! Frankie!,Yo! Frankie!,631.mp3
+632.0,Showtime,Showtime,632.mp3
+633.0,Oh; God!,Oh; Dios!,633.mp3
+634.0,Don Falcone,Don Falcone,634.mp3
+635.0,Forgive me; young man; I forget what your name is,Perdóname; joven; me olvido de lo que su nombre es,635.mp3
+636.0,Or perhaps I never knew it,O tal vez nunca supe que,636.mp3
+637.0,Gilzean; sir,Gilzean; sir,637.mp3
+638.0,Gilzean,Gilzean,638.mp3
+639.0,Tell Ms. Mooney she's too impetuous,Dígale a la Señora Mooney ella es demasiado impetuoso,639.mp3
+640.0,If she wants to kill policemen; she has to ask permission,Si ella quiere matar a policías; ella tiene que pedir permiso,640.mp3
+641.0,Sir,Sir,641.mp3
+642.0,There are rules,Hay reglas,642.mp3
+643.0,Cut them down,Cortó,643.mp3
+644.0,That's right; there are rules!,Eso es correcto; hay reglas!,644.mp3
+645.0,It's good to meet you at last; James,Es bueno encontrarse con usted en el pasado; James,645.mp3
+646.0,I knew your father very well,Conocí a su padre muy bien,646.mp3
+647.0,Best D.A. this city ever had,Mejor D. A. esta ciudad nunca había,647.mp3
+648.0,He and I understood each other,Él y yo entendíamos,648.mp3
+649.0,There was respect;,Hubo respeto;,649.mp3
+650.0, friendship; even.  Friendship?, amistad; incluso. La amistad?,650.mp3
+651.0,Trust me;,Confía en mí;,651.mp3
+652.0,that's the only reason you're alive now,esa es la única razón por la que estás vivo ahora,652.mp3
+653.0,Blood doesn't lie,La sangre no miente,653.mp3
+654.0,I know that when you leave here; you'll do the right thing,Sé que cuando salga de aquí; usted va a hacer lo correcto,654.mp3
+655.0,I will,Voy a,655.mp3
+656.0, I'll tell what I know.  Which is what?, Te voy a contar lo que yo sé. ¿Que es qué?,656.mp3
+657.0,I know that you own the police department,Sé que el departamento de policía de,657.mp3
+658.0,Probably the mayor; too,Probablemente el alcalde; demasiado,658.mp3
+659.0,And I was pretty sure that you had the Waynes killed;,Y yo estaba bastante seguro de que tenía el Waynes asesinado;,659.mp3
+660.0,but if you did;,pero si lo hizo;,660.mp3
+661.0,you wouldn't risk letting me live; would you?,usted no correrá el riesgo de que me tocó vivir; lo haría?,661.mp3
+662.0,Then again;,A continuación; de nuevo;,662.mp3
+663.0,how did Fish Mooney come to have Martha Wayne's necklace?,¿cómo Fish Mooney llegado a tener Martha Wayne del collar?,663.mp3
+664.0, A replica?  Yes, Una réplica? Sí,664.mp3
+665.0,But if you didn't have them killed; why frame Mario Pepper?,Pero si no las tienes muerto; ¿por qué marco de Mario Pimienta?,665.mp3
+666.0,Or are you covering up for somebody else?,O está encubriendo a alguien?,666.mp3
+667.0,Who knows who killed the Waynes?,Quién sabe quién mató a la Waynes?,667.mp3
+668.0,Some lowlife,Algunos barrios,668.mp3
+669.0,We needed a culprit before the funeral,Necesitábamos un culpable antes de que el funeral,669.mp3
+670.0,Pepper was sacrificed so that the people of Gotham would see,La pimienta se sacrificaron para que la gente de Gotham vería,670.mp3
+671.0,swift justice done,swift se haga justicia,671.mp3
+672.0,So they can feel safe and secure,Por lo que puede sentir seguro y seguro,672.mp3
+673.0, And that matters so much to you.  Of course, Y que es tan importante para usted. Por supuesto,673.mp3
+674.0,I'm a businessman,Soy un hombre de negocios,674.mp3
+675.0,You can't have organized crime without law and order,Usted no puede tener la delincuencia organizada sin la ley y el orden,675.mp3
+676.0,I love this city;,Me encanta esta ciudad;,676.mp3
+677.0,and I see it going to hell,y la veo a ir al infierno,677.mp3
+678.0,But I won't let it fall apart without a fight,Pero no voy a dejar que se desmoronan sin luchar,678.mp3
+679.0,You make a life of crime sound very noble,De hacer una vida de crimen de sonido muy noble,679.mp3
+680.0,You have a hard head; James; just like your father,Tiene una cabeza dura; Santiago; al igual que su padre,680.mp3
+681.0,Don't be selfrighteous. Don't be arrogant,No se selfrighteous. No sean arrogantes,681.mp3
+682.0,You want me to keep quiet about all this?,Tú me quieres a guardar silencio acerca de todo esto?,682.mp3
+683.0,Gotham is on a knife edge. What do you suppose,Gotham está en un filo de la navaja. ¿Qué crees que,683.mp3
+684.0,bringing down City Hall and the police force,trayendo abajo el Ayuntamiento y la policía,684.mp3
+685.0,will do; even if you could?,va a hacer; incluso si pudiera?,685.mp3
+686.0,Would it make things better?,Sería hacer las cosas mejor?,686.mp3
+687.0,In bocca Al Lupo,En bocca Al Lupo,687.mp3
+688.0,Lookit; Jim... I'm listening,Lookit; Jim... estoy escuchando,688.mp3
+689.0,I wasn't being honest with you,Yo no estaba siendo honesto con usted,689.mp3
+690.0,But you weren't ready for the truth,Pero tú no estabas preparado para la verdad,690.mp3
+691.0,You didn't tell me because you were ashamed,Usted no me dijo porque estaba avergonzado,691.mp3
+692.0,Why are we stopping here?,¿Por qué nos estamos deteniendo aquí?,692.mp3
+693.0,No; please. Please; I beg of you!,No; por favor. Por favor; te lo ruego!,693.mp3
+694.0,Shut up!,Cállate!,694.mp3
+695.0,This is the fool,Este es el tonto,695.mp3
+696.0,that snitched to Montoya and Allen,que snitched a Montoya y Allen,696.mp3
+697.0,Falcone wants you to walk him to the end of that pier,Falcone quiere que lo acompañe hasta el final del muelle,697.mp3
+698.0,and put a bullet in his head,y poner una bala en su cabeza,698.mp3
+699.0,Then everybody knows you're with the program,A continuación; todo el mundo sabe que estás con el programa,699.mp3
+700.0,And if I don't?,Y si yo no?,700.mp3
+701.0,Then I'm supposed to take you out,A continuación; voy a,701.mp3
+702.0,and him; too,y él; demasiado,702.mp3
+703.0,And here's the thing; Jim. I like you,Y aquí está la cosa; Jim. Me gusta,703.mp3
+704.0,I might not have the stomach to do it; but I'll try,Yo no podría tener el estómago para hacerlo; pero voy a tratar,704.mp3
+705.0,'Cause if I don't;,Porque si yo no;,705.mp3
+706.0,someone will get to you quick enough,alguien te llega lo suficientemente rápido,706.mp3
+707.0,Then they're gonna get to me and probably Barbara as well,Entonces ellos van a llegar a mí y probablemente Barbara así,707.mp3
+708.0,Who knows what you told her,Quien sabe lo que le dijo,708.mp3
+709.0,I told her nothing,Le dije nada,709.mp3
+710.0,You think Falcone cares?,Crees que Falcone le importa?,710.mp3
+711.0,Come on,Vienen en,711.mp3
+712.0,You've killed people before,Has matado a personas antes de,712.mp3
+713.0,That was war. This is war!,Que fue la guerra. Esto es la guerra!,713.mp3
+714.0,We're at war with scumbags like him,Estamos en guerra con los desgraciados como él,714.mp3
+715.0,Sometimes in war; you got to do a bad thing to do good; right?,A veces en la guerra; lo que tienes que hacer una cosa mala; a hacer el bien; a la derecha?,715.mp3
+716.0,So do you do this bad thing,Entonces; ¿que haces esta mal la cosa,716.mp3
+717.0,or do you die and maybe your girl dies?,o hacer morir y tal vez tu chica muere?,717.mp3
+718.0,I might be lackadaisical;,Yo podría ser displicente;,718.mp3
+719.0,hmm?,hmm?,719.mp3
+720.0,But that's not a tough call,Pero eso no es una decisión difícil,720.mp3
+721.0,Walk,A pie,721.mp3
+722.0,Please; Mr. Gordon; just let me live,Por favor; el Señor Gordon; sólo me deja vivir,722.mp3
+723.0,I'll do whatever you say. II'll be your slave for life,Haré lo que usted diga. II voy a ser tu esclavo de por vida,723.mp3
+724.0,Listen to me;,Me escuchan;,724.mp3
+725.0,there is a war coming,hay una guerra que viene,725.mp3
+726.0,Aa terrible war,Aa terrible guerra,726.mp3
+727.0,Falcone is losing his grip; and his rivals are hungry,Falcone está perdiendo su agarre; y sus rivales están hambrientos,727.mp3
+728.0,Therethere will be chaos. Rivers of blood in the streets,Therethere va a ser un caos. Ríos de sangre en las calles,728.mp3
+729.0,I know it! II can see it coming,Yo lo sé! II puede ver venir,729.mp3
+730.0,See; I'm clever that way,A ver; yo soy inteligente de esa manera,730.mp3
+731.0,And I can help you,Y me puede ayudar,731.mp3
+732.0,II can be a spy,II puede ser un espía,732.mp3
+733.0,Shut up!,Cállate!,733.mp3
+734.0,Turn around,La vuelta,734.mp3
+735.0,For God's sake; have mercy,Por el amor de Dios; ten misericordia,735.mp3
+736.0,Don't ever come back to Gotham,No se te ocurra volver a Gotham,736.mp3
+737.0,Attaboy,Attaboy,737.mp3
+738.0,My God; James,Mi Dios; James,738.mp3
+739.0,I've been so worried,He estado tan preocupado,739.mp3
+740.0,What happened to you?,¿Qué te ha pasado?,740.mp3
+741.0,Oi!,Oi!,741.mp3
+742.0,Master Bruce; get your bloody arse down off there!,Maestro de Bruce; obtener su sangrienta culo hasta allí!,742.mp3
+743.0,How many times have I told you?!,¿Cuántas veces te he dicho que?!,743.mp3
+744.0,Why were you up on the roof?,¿Por qué le pusieron arriba en el techo?,744.mp3
+745.0,I'm learning to conquer fear,Estoy aprendiendo a vencer el miedo,745.mp3
+746.0,Fear doesn't need conquering,El miedo no necesita conquistar,746.mp3
+747.0,Fear tells you where the edge is,El miedo le dice donde se encuentra el borde,747.mp3
+748.0,Fear is a good thing,El miedo es una cosa buena,748.mp3
+749.0,And you think I haven't told him that; do you?,Y usted piensa que yo no he dicho a él que; ¿usted?,749.mp3
+750.0,You came here for a reason; I imagine,Usted vino aquí por una razón; me imagino,750.mp3
+751.0,Yes;,Sí;,751.mp3
+752.0,Mario Pepper didn't kill your parents,Mario Pimienta no matar a sus padres,752.mp3
+753.0,He was framed by the police department,Él estaba enmarcada por el departamento de policía de,753.mp3
+754.0,and the mob working together,y la turba trabajando juntos,754.mp3
+755.0,We killed an innocent man,Nos mató a un hombre inocente,755.mp3
+756.0,Right,Derecho,756.mp3
+757.0, So who did it then?  I don't know, Lo que hice entonces? No sé,757.mp3
+758.0,I see,Veo,758.mp3
+759.0,Sterling work there then; mate; isn't it?,Excelente trabajo que había en ese entonces; compañero; ¿no es así?,759.mp3
+760.0,Yes,Sí,760.mp3
+761.0,I'm sorry,Lo siento,761.mp3
+762.0,Don't be,No se,762.mp3
+763.0,I'm glad he's still alive,Me alegro de que él todavía está vivo,763.mp3
+764.0,I want to see him again,Quiero verlo de nuevo,764.mp3
+765.0,I'm asking you,Te estoy preguntando,765.mp3
+766.0,to give me a second chance,para darme una segunda oportunidad,766.mp3
+767.0,I'm going to find out who killed your parents and why;,Voy a averiguar quién mató a sus padres y por qué;,767.mp3
+768.0,and I'm gonna clean up the damn police department if I can;,y me voy a limpiar el maldito departamento de policía si puedo;,768.mp3
+769.0,but I can only do that from the inside,pero sólo puedo hacerlo desde el interior,769.mp3
+770.0,So I'm asking you,Así que me estoy preguntando,770.mp3
+771.0,to stay silent,para permanecer en silencio,771.mp3
+772.0,about what I've told you,acerca de lo que te he dicho,772.mp3
+773.0,Your call,Su llamada,773.mp3
+774.0,Right; well; that's all convenient; isn't it?,Derecho; bien; eso es todo lo conveniente; ¿no es así?,774.mp3
+775.0,Alfred!,Alfred!,775.mp3
+776.0,Thank you,Gracias,776.mp3
+777.0,Sync and corrections by madhatters www.addic7ed.com,Sincronización y corrección de madhatters www.addic7ed.com,777.mp3
+778.0,<font color=#ffff00 size=14>www.tvsubtitles.net</font>,<font color=#ffff00 size=14>www.tvsubtitles.net</fuente>,778.mp3

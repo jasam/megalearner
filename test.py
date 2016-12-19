@@ -2,24 +2,20 @@ args = ['/home/jasam/repositories/megalearner/tests/gotham/Gotham - 1x01.srt', '
 
 import pysrt
 from urllib.request import urlopen
-import json
-import xml.etree.ElementTree as ET
-from xml.dom import minidom
 from urllib.request import urlretrieve
 import pandas as pd
 import timeit
+from yandex_translate import YandexTranslate
+import urllib.parse
 
 file_name = args[0]
 
-# Translate using yandex
-YANDEX_TOKEN = 'trnsl.1.1.20161206T131516Z.977502a78631e44a.ee6e6f5da9accef8571f04e123680e333d744149'
-URL_YANDEX = 'https://translate.yandex.net/api/v1.5/tr/translate?key={0}&text={1}&lang=en-es'
-
 # Text to speech using acapela
 path_to_save = '/home/jasam/repositories/megalearner/tests/gotham/sentences/'
-path_name_mp3 = 'http://vaas.acapela-group.com/Services/Synthesizer?req_voice={0}&req_text={1}&cl_pwd={2}&req_asw_type=STREAM&cl_login=EVAL_VAAS&cl_app=EVAL_3530309'
-voice = 'ryan22k'
-pwd = 'sjyraicm' 
+
+YANDEX_TOKEN = 'trnsl.1.1.20161206T131516Z.977502a78631e44a.ee6e6f5da9accef8571f04e123680e333d744149'
+YANDEX_KEY_TTS = '11c5b64f-32ec-4252-a4f0-138132812068'
+URL_YANDEX_TTS = 'https://tts.voicetech.yandex.net/generate?%s'
 
 class WordSpec:
      
@@ -59,34 +55,45 @@ subs = pysrt.open(file_name)
 index = 1
 
 sentences = []
-for item in subs[1:10]:
+
+translate = YandexTranslate(YANDEX_TOKEN)
+
+for item in subs:
     
     sentence = item.text
     sentence = sentence.replace('-', '')
+    if sentence[-1] == '.':
+        sentence = sentence[:-1]
     sentence = sentence.replace('"', '')
     sentence = sentence.replace(',', ';')
-    sentence = sentence.replace('.', '')
-    sentence_cast = sentence.replace(' ', '+')
+    sentence = sentence.replace('\n', ' ')
+    sentence_cast = sentence
     print(index, sentence_cast)
-    url_to_use = URL_YANDEX.format(YANDEX_TOKEN, sentence_cast)
-    try:
-        response = urlopen(url_to_use).read()
-        xmldoc = minidom.parseString(response)
-        text = xmldoc.getElementsByTagName('text')
-        sentence_translated = text[0].firstChild.nodeValue
-        #print(sentence_translated)
-    except:
-        print('problem translating with: ', url_to_use)
+    reponse = translate.translate(sentence_cast, 'en-es')
+    sentence_translated = reponse['text'][0]
+    sentence_translated = sentence_translated.replace(',', ';')
+    
+    if reponse['code'] == 200:
+        print(sentence_translated)
+    else:
+        print('Problema con: ', sentence_cast)
     
     try:
-        path_name_mp3 = 'http://vaas.acapela-group.com/Services/Synthesizer?req_voice={0}&req_text={1}&cl_pwd={2}&req_asw_type=STREAM&cl_login=EVAL_VAAS&cl_app=EVAL_3530309'
-        path_name_mp3 = path_name_mp3.format(voice, sentence, pwd)
-        print(path_name_mp3)
-        urlretrieve(path_name_mp3, path_to_save+str(index)+'.mp3')
+        params = urllib.parse.urlencode({'text': sentence_cast, 
+                                         'format': 'wav',
+                                         'lang':'en-EN',
+                                         'speaker':'zahar',
+                                         'emotion':'good',
+                                         'key':YANDEX_KEY_TTS})
+        
+        path_url_sound = URL_YANDEX_TTS % params
+        #print(path_url_sound)
+        #print(path_name_mp3)
+        urlretrieve(path_url_sound, path_to_save+str(index)+'.mp3')
     except:
         print('problem text to speech: ', sentence)
     
-    word_spec = WordSpec(index, text, sentence_translated, str(index)+'.mp3')
+    word_spec = WordSpec(index, sentence, sentence_translated, str(index)+'.mp3')
     sentences.append(word_spec)
     
     index += 1
